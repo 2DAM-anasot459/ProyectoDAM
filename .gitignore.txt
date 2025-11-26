@@ -1,0 +1,4 @@
+# Carpetas que no se suben
+.vs/
+bin/
+obj/
