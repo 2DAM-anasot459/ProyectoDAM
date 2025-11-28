@@ -11,7 +11,7 @@ namespace Agente
         //Datos Hardware del activo
         public string CpuNombre { get; set; }
         public int CpuNucleos { get; set; }
-        public int CpuFabricante { get; set; }
+        public string CpuFabricante { get; set; }
         public int RamTotalGb { get; set; }
         public int RamModulos { get; set; }
         public string RamTipo { get; set; }

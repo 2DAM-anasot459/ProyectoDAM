@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Management;
+using Microsoft.Win32;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -15,7 +16,7 @@ namespace Agente
             DatosHardware dhw = new DatosHardware();
 
             //CPU
-            ManagementObjectSearcher cpu = new ManagementObjectSearcher("select Name, NumberOfCore, Manufacturer from Win32_Processor");
+            ManagementObjectSearcher cpu = new ManagementObjectSearcher(@"root\CIMV2", "select Name, NumberOfCores, Manufacturer from Win32_Processor");
 
             ManagementObjectCollection cpuCol = cpu.Get();
             ManagementObjectCollection.ManagementObjectEnumerator cpuEnum = cpuCol.GetEnumerator();
@@ -38,21 +39,21 @@ namespace Agente
                     dhw.CpuNombre = cpuObj["Name"].ToString();
 
                 }
-                if (cpuObj["NumberOfCore"] == null)
+                if (cpuObj["NumberOfCores"] == null)
                 {
                     dhw.CpuNucleos = 0;
                 }
                 else
                 {
-                    dhw.CpuNucleos = Convert.ToInt32(cpuObj["NumberOfCore"]);
+                    dhw.CpuNucleos = Convert.ToInt32(cpuObj["NumberOfCores"]);
                 }
                 if (cpuObj["Manufacturer"] == null)
                 {
-                    dhw.CpuFabricante = 0;
+                    dhw.CpuFabricante = "";
                 }
                 else
                 {
-                    dhw.CpuFabricante = Convert.ToInt32(cpuObj["Manufacturer"]);
+                    dhw.CpuFabricante = Convert.ToString(cpuObj["Manufacturer"]);
                 }
             }
 
@@ -144,7 +145,7 @@ namespace Agente
 
             //Disco Duro
             ManagementObjectSearcher disco = new ManagementObjectSearcher("select Model, Size from Win32_DiskDrive");
-            ManagementObjectCollection discoCol = disco.Get();    
+            ManagementObjectCollection discoCol = disco.Get();
             ManagementObjectCollection.ManagementObjectEnumerator discoEnum = discoCol.GetEnumerator();
             if (discoEnum.MoveNext())
             {
@@ -207,7 +208,7 @@ namespace Agente
             dsw.SOVersion = "";
             dsw.UltimoArranque = DateTime.UtcNow;
             dsw.NombreUsuario = "";
-            
+
             //Sistema Operativo
             ManagementObjectSearcher so = new ManagementObjectSearcher("select Caption, Version, LastBootUpTime from Win32_OperatingSystem");
             ManagementObjectCollection soCol = so.Get();
@@ -227,9 +228,9 @@ namespace Agente
                 if (soObj["LastBootUpTime"] != null)
                 {
                     string lastBoot = soObj["LastBootUpTime"].ToString();
-                    if(!string.IsNullOrEmpty(lastBoot))
+                    if (!string.IsNullOrEmpty(lastBoot))
                         dsw.UltimoArranque = ManagementDateTimeConverter.ToDateTime(lastBoot);
-                }                               
+                }
             }
 
             //Nombre Usuario
@@ -247,19 +248,21 @@ namespace Agente
             }
 
             //Estado Windows Defender
+            dsw.EstadoDefender = "Desconocido";
             try
             {
-                ManagementObjectSearcher defender = new ManagementObjectSearcher("select displayName from AntiVirusProduct");
+                ManagementObjectSearcher defender = new ManagementObjectSearcher(@"root\SecurityCenter2", "select displayName from AntiVirusProduct");
                 ManagementObjectCollection defenderCol = defender.Get();
                 ManagementObjectCollection.ManagementObjectEnumerator defenderEnum = defenderCol.GetEnumerator();
 
                 if (defenderEnum.MoveNext())
                 {
                     ManagementObject defenderObj = (ManagementObject)defenderEnum.Current;
-                    if(defenderObj["displayName"] != null)
+                    if (defenderObj["displayName"] != null)
                     {
                         string nombreDefender = defenderObj["displayName"].ToString();
-                        if (nombreDefender.ToLower().Contains("windows defender"))
+                        string nombreMinusculas = nombreDefender.ToLower();
+                        if (nombreDefender.ToLower().Contains("windows defender") || nombreMinusculas.Contains("microsoft defender"))
                         {
                             dsw.EstadoDefender = "Activo";
                         }
@@ -270,11 +273,19 @@ namespace Agente
                     }
                 }
             }
-            catch
+            catch (System.Management.ManagementException)
             {
                 dsw.EstadoDefender = "Desconocido";
             }
-            
+            catch (System.UnauthorizedAccessException)
+            {
+                dsw.EstadoDefender = "Desconocido";
+            }
+            catch (Exception)
+            {
+                dsw.EstadoDefender = "Desconocido";
+            }
+
 
 
             return dsw;
@@ -285,32 +296,55 @@ namespace Agente
         public static List<DatosProgramas> recolectorProgramas()
         {
             List<DatosProgramas> listaProgramas = new List<DatosProgramas>();
-            ManagementObjectSearcher programas = new ManagementObjectSearcher("select Name, InstallLocation from Win32_Product");
-            ManagementObjectCollection programasCol = programas.Get();
-            ManagementObjectCollection.ManagementObjectEnumerator programasEnum = programasCol.GetEnumerator();
-            while (programasEnum.MoveNext())
-            {
-                ManagementObject programaObj = (ManagementObject)programasEnum.Current;
-                DatosProgramas dp = new DatosProgramas();
-                if (programaObj["Name"] != null)
-                {
-                    dp.NombrePrograma = programaObj["Name"].ToString();
-                }
-                else
-                {
-                    dp.NombrePrograma = "";
-                }
-                if (programaObj["InstallLocation"] != null)
-                {
-                    dp.RutaPrograma = programaObj["InstallLocation"].ToString();
-                }
-                else
-                {
-                    dp.RutaPrograma = "";
-                }
-                listaProgramas.Add(dp);
-            }
+            //Programas de 64 bits
+            LeerProgramasDeRegistro(listaProgramas, Registry.LocalMachine, @"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall");
+            //Programas de 32 bits
+            LeerProgramasDeRegistro(listaProgramas, Registry.LocalMachine, @"SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall");
+
             return listaProgramas;
         }
+
+        private static void LeerProgramasDeRegistro(List<DatosProgramas> listaProgramas, RegistryKey localMachine, string ruta)
+        {
+            RegistryKey clave = localMachine.OpenSubKey(ruta);
+            if (clave == null)
+            {
+                return;
+            }
+            string[] subclaves = clave.GetSubKeyNames();
+            int i = 0;
+
+            while (i < subclaves.Length)
+            {
+                string nombreSubclave = subclaves[i];
+                RegistryKey appKey = clave.OpenSubKey(subclaves[i]);
+                if (appKey != null)
+                {
+                    object nombrePrograma = appKey.GetValue("DisplayName");
+                    if (nombrePrograma != null)
+                    {
+                        DatosProgramas dp = new DatosProgramas();
+                        dp.NombrePrograma = nombrePrograma.ToString();
+
+
+                        object rutaProg = appKey.GetValue("InstallLocation");
+                        if (rutaProg != null)
+                        {
+                            dp.RutaPrograma = rutaProg.ToString();
+                        }
+                        else
+                        {
+                            dp.RutaPrograma = "";
+                        }
+                        listaProgramas.Add(dp);
+                    }
+                    appKey.Close();
+                }
+                i = i + 1;
+            }
+            clave.Close();
+        }
+
     }
 }
+
