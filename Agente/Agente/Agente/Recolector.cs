@@ -59,7 +59,6 @@ namespace Agente
 
             //RAM
             ManagementObjectSearcher ram = new ManagementObjectSearcher("select Capacity, SMBIOSMemoryType from Win32_PhysicalMemory");
-
             ManagementObjectCollection ramCol = ram.Get();
             ManagementObjectCollection.ManagementObjectEnumerator ramEnum = ramCol.GetEnumerator();
 
@@ -72,11 +71,12 @@ namespace Agente
             {
                 ManagementObject ramObj = (ManagementObject)ramEnum.Current;
                 modulos++;
-                if (ramObj["Capacity"] != null) ;
+                if (ramObj["Capacity"] != null) 
                 ramTotal += Convert.ToInt64(ramObj["Capacity"]);
                 if (ramObj["SMBIOSMemoryType"] != null)
                 {
-                    string tipoActual = ramObj["SMBIOSMemoryType"].ToString();
+                    int codigoTipo = Convert.ToInt32(ramObj["SMBIOSMemoryType"]);
+                    string tipoActual = TipoRamNombre(codigoTipo);
                     if (tipoRam == "")
                     {
                         tipoRam = tipoActual;
@@ -114,6 +114,26 @@ namespace Agente
                     {
                         dhw.RamRanuaras += Convert.ToInt32(ranuraObj["MemoryDevices"]);
                     }
+                }
+            }
+
+            //Función para obtener el nombre del tipo de RAM
+            static string TipoRamNombre(int codigo)
+            {
+                switch(codigo)
+                {
+                    case 20:
+                        return "DDR";
+                    case 21:
+                        return "DDR2";
+                    case 24:
+                        return "DDR3";
+                    case 26:
+                        return "DDR4";
+                    case 34:
+                        return "DDR5";
+                    default:
+                        return "Desconocido (" + codigo.ToString() + ")";
                 }
             }
 
@@ -208,6 +228,9 @@ namespace Agente
             dsw.SOVersion = "";
             dsw.UltimoArranque = DateTime.UtcNow;
             dsw.NombreUsuario = "";
+            dsw.ModeloEquipo = "";
+            dsw.RedIp = "";
+            dsw.RedEstado = "Desconectado";
 
             //Sistema Operativo
             ManagementObjectSearcher so = new ManagementObjectSearcher("select Caption, Version, LastBootUpTime from Win32_OperatingSystem");
@@ -286,7 +309,53 @@ namespace Agente
                 dsw.EstadoDefender = "Desconocido";
             }
 
+            //Modelo Equipo
+            ManagementObjectSearcher modelo = new ManagementObjectSearcher("select Model from Win32_ComputerSystem");
+            ManagementObjectCollection modeloCol = modelo.Get();
+            ManagementObjectCollection.ManagementObjectEnumerator modeloEnum = modeloCol.GetEnumerator();
+            if (modeloEnum.MoveNext())
+            {
+                ManagementObject modeloObj = (ManagementObject)modeloEnum.Current;
+                if (modeloObj["Model"] != null)
+                {
+                    dsw.ModeloEquipo = modeloObj["Model"].ToString();
+                }
+            }
 
+            //IP y Estado Red
+            try
+            {
+                ManagementObjectSearcher red = new ManagementObjectSearcher("select IPAddress from Win32_NetworkAdapterConfiguration where IPEnabled=true");
+                ManagementObjectCollection redCol = red.Get();
+                ManagementObjectCollection.ManagementObjectEnumerator redEnum = redCol.GetEnumerator();
+
+                if(redEnum.MoveNext())
+                {
+                    ManagementObject redObj = (ManagementObject)redEnum.Current;
+                    if (redObj["IPAddress"] != null)
+                    {
+                        object ipAddressObj = redObj["IPAddress"];
+                        if(ipAddressObj is Array)
+                        {
+                            string[] ipAddresses = (string[])ipAddressObj;
+                            if (ipAddresses.Length > 0)
+                            {
+                                dsw.RedIp = ipAddresses[0];
+                                
+                            }
+                        }
+                        if(dsw.RedIp != "")
+                        {
+                            dsw.RedEstado = "Conectado";
+                        }
+                    }
+                }
+            }
+            catch(Exception)
+            {
+                dsw.RedIp = "";
+                dsw.RedEstado = "Desconocido";
+            }       
 
             return dsw;
 
@@ -327,7 +396,7 @@ namespace Agente
                         dp.NombrePrograma = nombrePrograma.ToString();
 
 
-                        object rutaProg = appKey.GetValue("InstallLocation");
+                        object rutaProg = appKey.GetValue("InstallLocationº");
                         if (rutaProg != null)
                         {
                             dp.RutaPrograma = rutaProg.ToString();
@@ -344,6 +413,8 @@ namespace Agente
             }
             clave.Close();
         }
+
+
 
     }
 }

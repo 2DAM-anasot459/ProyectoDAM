@@ -33,6 +33,11 @@ namespace Agente
         public string NombreUsuario { get; set; }
         public string EstadoDefender { get; set; }
 
+        //Datos para tabla Activos
+        public string ModeloEquipo { get; set; }
+        public string RedIp { get; set; }
+        public string RedEstado { get; set; }
+
     }
 
 

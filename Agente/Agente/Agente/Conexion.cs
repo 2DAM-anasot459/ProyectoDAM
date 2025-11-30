@@ -131,9 +131,22 @@ namespace Agente
 
         }
 
-        //public void ActualizarDatosActivo(int idActivo, DatosSoftware ds)
-        //{
-
-        //}
+        //Método para actualizar datos del activo
+        public void ActualizarDatosActivo(int idActivo, DatosSoftware ds)
+        {
+            MySqlConnection conex = new MySqlConnection(cadena);
+            string consultaActualizacion = "UPDATE ACTIVOS SET MODELO_EQUIPO = @modeloEquipo, USUARIO_ACTUAL = @usuarioActual, RED_IP = @redIp, RED_ESTADO = @redEstado, SO_NOMBRE = @soNombre, SO_VERSION = @soVersion WHERE ID_ACTIVO = @idActivo";
+            MySqlCommand comandoActualizacion = new MySqlCommand(consultaActualizacion, conex);
+            comandoActualizacion.Parameters.AddWithValue("@modeloEquipo", ds.ModeloEquipo);
+            comandoActualizacion.Parameters.AddWithValue("@usuarioActual", ds.NombreUsuario);
+            comandoActualizacion.Parameters.AddWithValue("@redIp", ds.RedIp);   
+            comandoActualizacion.Parameters.AddWithValue("@redEstado", ds.RedEstado);
+            comandoActualizacion.Parameters.AddWithValue("@soNombre", ds.SistemaOperativo);
+            comandoActualizacion.Parameters.AddWithValue("@soVersion", ds.SOVersion);
+            comandoActualizacion.Parameters.AddWithValue("@idActivo", idActivo);
+            conex.Open();
+            comandoActualizacion.ExecuteNonQuery();
+            conex.Close();
+        }
     }
 }

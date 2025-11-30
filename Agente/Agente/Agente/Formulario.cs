@@ -58,6 +58,7 @@ namespace Agente
                 DatosSoftware datosSoftware = Recolector.recolectorSoftware();
                 List<DatosProgramas> listaProgramas = Recolector.recolectorProgramas();
 
+
                 EscribirMensaje("Escaneo completado. Guardando datos en la base de datos...");
                 Conexion conexion = new Conexion(cadenaConexion);
 
@@ -68,6 +69,7 @@ namespace Agente
                 conexion.InsertarDatosHardware(idActivo, datosHardware);
                 EscribirMensaje("Guardando datos de software y programas instalados...");
                 conexion.InsertarDatosSoftware(idActivo, datosSoftware, listaProgramas);
+                conexion.ActualizarDatosActivo(idActivo, datosSoftware);
 
                 EscribirMensaje("Proceso completado correctamente.");
                 MessageBox.Show("Escaneo y guardado completados.",
@@ -90,5 +92,5 @@ namespace Agente
         }
     }
        
-    }
+}
 
