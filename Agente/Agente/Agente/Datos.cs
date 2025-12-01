@@ -11,7 +11,7 @@ namespace Agente
         //Datos Hardware del activo
         public string CpuNombre { get; set; }
         public int CpuNucleos { get; set; }
-        public int CpuFabricante { get; set; }
+        public string CpuFabricante { get; set; }
         public int RamTotalGb { get; set; }
         public int RamModulos { get; set; }
         public string RamTipo { get; set; }
@@ -32,6 +32,11 @@ namespace Agente
         public DateTime UltimoArranque { get; set; }
         public string NombreUsuario { get; set; }
         public string EstadoDefender { get; set; }
+
+        //Datos para tabla Activos
+        public string ModeloEquipo { get; set; }
+        public string RedIp { get; set; }
+        public string RedEstado { get; set; }
 
     }
 
