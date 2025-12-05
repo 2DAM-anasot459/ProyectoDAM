@@ -161,7 +161,7 @@
                            HorizontalOptions="Center"
                            VerticalOptions="Center"/>
                 </Border>
-                <Label Text="Incidencias"
+                <Label Text="Usuario"
                        FontSize="12"
                        TextColor="White"/>
             </VerticalStackLayout>

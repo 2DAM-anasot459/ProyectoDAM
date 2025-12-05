@@ -7,12 +7,24 @@
       "RelativeMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|solutionrelative:inventarioactivos\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|c:\\repositorio\\tfg\\app\\inventarioactivos\\inventarioactivos\\administrador\\editarusuario.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|solutionrelative:inventarioactivos\\administrador\\editarusuario.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|c:\\repositorio\\tfg\\app\\inventarioactivos\\inventarioactivos\\administrador\\editarlocalizacion.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|solutionrelative:inventarioactivos\\administrador\\editarlocalizacion.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|c:\\repositorio\\tfg\\app\\inventarioactivos\\inventarioactivos\\administrador\\crearusuario.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|solutionrelative:inventarioactivos\\administrador\\crearusuario.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|c:\\repositorio\\tfg\\app\\inventarioactivos\\inventarioactivos\\administrador\\editarlocalizacion.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|solutionrelative:inventarioactivos\\administrador\\editarlocalizacion.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|c:\\repositorio\\tfg\\app\\inventarioactivos\\inventarioactivos\\administrador\\crearlocalizacion.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|solutionrelative:inventarioactivos\\administrador\\crearlocalizacion.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|c:\\repositorio\\tfg\\app\\inventarioactivos\\inventarioactivos\\administrador\\gestionlocalizacion.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|solutionrelative:inventarioactivos\\administrador\\gestionlocalizacion.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|c:\\repositorio\\tfg\\app\\inventarioactivos\\inventarioactivos\\administrador\\gestionincidencias.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|solutionrelative:inventarioactivos\\administrador\\gestionincidencias.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,33 +33,59 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "DockedWidth": 208,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CrearUsuario.xaml",
-              "DocumentMoniker": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\Administrador\\CrearUsuario.xaml",
-              "RelativeDocumentMoniker": "InventarioActivos\\Administrador\\CrearUsuario.xaml",
-              "ToolTip": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\Administrador\\CrearUsuario.xaml",
-              "RelativeToolTip": "InventarioActivos\\Administrador\\CrearUsuario.xaml",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAEYAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-04T12:06:18.365Z",
+              "DocumentIndex": 1,
+              "Title": "EditarLocalizacion.xaml.cs",
+              "DocumentMoniker": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\Administrador\\EditarLocalizacion.xaml.cs",
+              "RelativeDocumentMoniker": "InventarioActivos\\Administrador\\EditarLocalizacion.xaml.cs",
+              "ToolTip": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\Administrador\\EditarLocalizacion.xaml.cs",
+              "RelativeToolTip": "InventarioActivos\\Administrador\\EditarLocalizacion.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T20:15:28.755Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EditarUsuario.xaml",
-              "DocumentMoniker": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\Administrador\\EditarUsuario.xaml",
-              "RelativeDocumentMoniker": "InventarioActivos\\Administrador\\EditarUsuario.xaml",
-              "ToolTip": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\Administrador\\EditarUsuario.xaml",
-              "RelativeToolTip": "InventarioActivos\\Administrador\\EditarUsuario.xaml",
-              "ViewState": "AgIAAJAAAAAAAAAAAAAAAJQAAAAqAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "EditarLocalizacion.xaml",
+              "DocumentMoniker": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\Administrador\\EditarLocalizacion.xaml",
+              "RelativeDocumentMoniker": "InventarioActivos\\Administrador\\EditarLocalizacion.xaml",
+              "ToolTip": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\Administrador\\EditarLocalizacion.xaml",
+              "RelativeToolTip": "InventarioActivos\\Administrador\\EditarLocalizacion.xaml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACYAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-04T12:05:33.048Z",
+              "WhenOpened": "2025-12-05T20:14:11.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CrearLocalizacion.xaml",
+              "DocumentMoniker": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\Administrador\\CrearLocalizacion.xaml",
+              "RelativeDocumentMoniker": "InventarioActivos\\Administrador\\CrearLocalizacion.xaml",
+              "ToolTip": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\Administrador\\CrearLocalizacion.xaml",
+              "RelativeToolTip": "InventarioActivos\\Administrador\\CrearLocalizacion.xaml",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAAAK4AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-05T19:45:32.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GestionLocalizacion.xaml",
+              "DocumentMoniker": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\Administrador\\GestionLocalizacion.xaml",
+              "RelativeDocumentMoniker": "InventarioActivos\\Administrador\\GestionLocalizacion.xaml",
+              "ToolTip": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\Administrador\\GestionLocalizacion.xaml",
+              "RelativeToolTip": "InventarioActivos\\Administrador\\GestionLocalizacion.xaml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAADMAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-05T18:50:23.402Z",
               "EditorCaption": ""
             },
             {
@@ -58,9 +96,22 @@
               "RelativeDocumentMoniker": "InventarioActivos\\App.xaml.cs",
               "ToolTip": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\App.xaml.cs",
               "RelativeToolTip": "InventarioActivos\\App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-01T11:48:31.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GestionIncidencias.xaml",
+              "DocumentMoniker": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\Administrador\\GestionIncidencias.xaml",
+              "RelativeDocumentMoniker": "InventarioActivos\\Administrador\\GestionIncidencias.xaml",
+              "ToolTip": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\Administrador\\GestionIncidencias.xaml",
+              "RelativeToolTip": "InventarioActivos\\Administrador\\GestionIncidencias.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-05T14:30:24.119Z",
               "EditorCaption": ""
             }
           ]

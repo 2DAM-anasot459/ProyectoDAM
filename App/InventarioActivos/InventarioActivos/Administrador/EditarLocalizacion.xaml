@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="InventarioActivos.Administrador.EditarLocalizacion"
+             Shell.NavBarIsVisible="False">
+    <Grid RowDefinitions="Auto,*,Auto"
+         BackgroundColor="White">
+        <!--Cabecera-->
+        <Grid Grid.Row="0"
+             BackgroundColor="#E53935"
+             HeightRequest="60"
+             Padding="16,10,16,10">
+            <Label Text="Editar Localización"
+                  VerticalOptions="Center"
+                  HorizontalOptions="Start"
+                  FontSize="20"
+                  FontAttributes="Bold"
+                  TextColor="White"/>
+        </Grid>
+        <!--Contenido-->
+        <ScrollView Grid.Row="1">
+            <VerticalStackLayout Padding="16"
+                    Spacing="16">
+                <!--Titulo-->
+                <VerticalStackLayout Spacing="4">
+                    <Label Text="Activos"
+                          FontSize="14"
+                          FontAttributes="Bold"
+                          TextColor="#555"/>
+                    <!--Desplegable de Activos-->
+                    <Border BackgroundColor="White"
+                           Stroke="#DDDDDD"
+                           StrokeThickness="1"
+                           HeightRequest="44">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="10"/>
+                        </Border.StrokeShape>
+                        <Grid ColumnDefinitions="*,Auto">
+                            <Label Text="Elegir Activo"
+                                  Margin="10,0"
+                                  VerticalOptions="Center"
+                                  TextColor="#A0A0A0"/>
+                            <Image Grid.Column="1"
+                                  Source="flechanavegar.png"
+                                  HeightRequest="16"
+                                  WidthRequest="16"
+                                  Margin="0,0,10,0"
+                                  VerticalOptions="Center"
+                                  HorizontalOptions="End"/>
+                        </Grid>
+                    </Border>
+                </VerticalStackLayout>
+                <!--Contenido del mapa-->
+                <Border Grid.Row="2"
+                       Margin="16"
+                       Stroke="#E0E0E0"
+                       StrokeThickness="1"
+                       BackgroundColor="White">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <Grid IsClippedToBounds="True">
+                        <Image Source="mapa.png"
+                              Aspect="AspectFill"
+                              HeightRequest="350"
+                              HorizontalOptions="Fill"
+                              VerticalOptions="Center"/>
+                        <!--Ejemplo de chincheta-->
+                        <Border
+                           WidthRequest="24"
+                           HeightRequest="24"
+                           Background="#1E88E5"
+                           Stroke="White"
+                           StrokeThickness="2"
+                           HorizontalOptions="End"
+                           VerticalOptions="End"
+                           Margin="20,20,30,30">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="999"/>
+                            </Border.StrokeShape>
+                        </Border>
+                    </Grid>
+                </Border>
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <!--Barra de navegación inferior-->
+        <Grid Grid.Row="2"
+                 BackgroundColor="#E53935"                  
+                 Padding="0,6"
+                 ColumnDefinitions="*,*,*,*">
+            <!--Inicio-->
+            <VerticalStackLayout Grid.Column="0"
+                                Spacing="2"
+                                HorizontalOptions="Center">
+                <Border BackgroundColor="White"
+                       HeightRequest="40"
+                       WidthRequest="40">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <Image Source="home.png"
+                          HeightRequest="24"
+                          WidthRequest="24"
+                          HorizontalOptions="Center"
+                          VerticalOptions="Center"/>
+                </Border>
+                <Label Text="Inicio"
+                      FontSize="12"
+                      TextColor="White"
+                      HorizontalOptions="Center"
+                      VerticalOptions="Center"/>
+            </VerticalStackLayout>
+            <!--Incidencias-->
+            <VerticalStackLayout Grid.Column="1"
+                                Spacing="2"
+                                HorizontalOptions="Center">
+                <Border BackgroundColor="White"
+                       HeightRequest="40"
+                       WidthRequest="40">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <Image Source="incidencias.png"
+                          HeightRequest="24"
+                          WidthRequest="24"
+                          HorizontalOptions="Center"
+                          VerticalOptions="Center"/>
+                </Border>
+                <Label Text="Incidencias"
+                      FontSize="12"
+                      TextColor="White"/>
+            </VerticalStackLayout>
+            <!--Localización-->
+            <VerticalStackLayout Grid.Column="2"
+                                Spacing="2"
+                                HorizontalOptions="Center">
+                <Border BackgroundColor="White"
+                       HeightRequest="40"
+                       WidthRequest="40">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <Image Source="localizacion.png"
+                          HeightRequest="24"
+                          WidthRequest="24"
+                          HorizontalOptions="Center"
+                          VerticalOptions="Center"/>
+                </Border>
+                <Label Text="Localización"
+                      FontSize="12"
+                      TextColor="White"/>
+            </VerticalStackLayout>
+            <!--Usuarios-->
+            <VerticalStackLayout Grid.Column="3"
+                                Spacing="2"
+                                HorizontalOptions="Center">
+                <Border BackgroundColor="White"
+                       HeightRequest="40"
+                       WidthRequest="40">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <Image Source="usuario.png"
+                          HeightRequest="24"
+                          WidthRequest="24"
+                          HorizontalOptions="Center"
+                          VerticalOptions="Center"/>
+                </Border>
+                <Label Text="Usuario"
+                      FontSize="12"
+                      TextColor="White"/>
+            </VerticalStackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>

@@ -7,7 +7,9 @@ obj\Debug\net9.0-android\resizetizer\r\drawable\lapiz.png
 obj\Debug\net9.0-android\resizetizer\r\drawable\localizacion.png
 obj\Debug\net9.0-android\resizetizer\r\drawable\logo_isla.png
 obj\Debug\net9.0-android\resizetizer\r\drawable\lupa.png
+obj\Debug\net9.0-android\resizetizer\r\drawable\mapa.png
 obj\Debug\net9.0-android\resizetizer\r\drawable\papelera.png
+obj\Debug\net9.0-android\resizetizer\r\drawable\suma.png
 obj\Debug\net9.0-android\resizetizer\r\drawable\usuario.png
 obj\Debug\net9.0-android\resizetizer\r\drawable-hdpi\dotnet_bot.png
 obj\Debug\net9.0-android\resizetizer\r\drawable-mdpi\dotnet_bot.png

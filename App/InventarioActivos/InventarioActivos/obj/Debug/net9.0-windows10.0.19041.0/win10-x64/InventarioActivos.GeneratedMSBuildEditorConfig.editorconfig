@@ -30,6 +30,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = InventarioActivos.Administ
 build_metadata.AdditionalFiles.TargetPath = Administrador\AdministradorHome.xaml
 build_metadata.AdditionalFiles.RelativePath = Administrador\AdministradorHome.xaml
 
+[C:/repositorio/TFG/App/InventarioActivos/InventarioActivos/Administrador/CrearLocalizacion.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InventarioActivos.Administrador.CrearLocalizacion.xaml
+build_metadata.AdditionalFiles.TargetPath = Administrador\CrearLocalizacion.xaml
+build_metadata.AdditionalFiles.RelativePath = Administrador\CrearLocalizacion.xaml
+
 [C:/repositorio/TFG/App/InventarioActivos/InventarioActivos/Administrador/CrearUsuario.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = InventarioActivos.Administrador.CrearUsuario.xaml
@@ -42,6 +48,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = InventarioActivos.Administ
 build_metadata.AdditionalFiles.TargetPath = Administrador\EditarIncidencia.xaml
 build_metadata.AdditionalFiles.RelativePath = Administrador\EditarIncidencia.xaml
 
+[C:/repositorio/TFG/App/InventarioActivos/InventarioActivos/Administrador/EditarLocalizacion.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InventarioActivos.Administrador.EditarLocalizacion.xaml
+build_metadata.AdditionalFiles.TargetPath = Administrador\EditarLocalizacion.xaml
+build_metadata.AdditionalFiles.RelativePath = Administrador\EditarLocalizacion.xaml
+
 [C:/repositorio/TFG/App/InventarioActivos/InventarioActivos/Administrador/EditarUsuario.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = InventarioActivos.Administrador.EditarUsuario.xaml
@@ -53,6 +65,12 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = InventarioActivos.Administrador.GestionIncidencias.xaml
 build_metadata.AdditionalFiles.TargetPath = Administrador\GestionIncidencias.xaml
 build_metadata.AdditionalFiles.RelativePath = Administrador\GestionIncidencias.xaml
+
+[C:/repositorio/TFG/App/InventarioActivos/InventarioActivos/Administrador/GestionLocalizacion.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InventarioActivos.Administrador.GestionLocalizacion.xaml
+build_metadata.AdditionalFiles.TargetPath = Administrador\GestionLocalizacion.xaml
+build_metadata.AdditionalFiles.RelativePath = Administrador\GestionLocalizacion.xaml
 
 [C:/repositorio/TFG/App/InventarioActivos/InventarioActivos/Administrador/GestionUsuarios.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

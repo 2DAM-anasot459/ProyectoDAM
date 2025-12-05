@@ -536,3 +536,9 @@ C:\repositorio\TFG\App\InventarioActivos\InventarioActivos\bin\Debug\net9.0-wind
 C:\repositorio\TFG\App\InventarioActivos\InventarioActivos\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\flechanavegar.scale-100.png
 C:\repositorio\TFG\App\InventarioActivos\InventarioActivos\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\calendario.scale-100.png
 C:\repositorio\TFG\App\InventarioActivos\InventarioActivos\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\flechanavegar.scale-100.png
+C:\repositorio\TFG\App\InventarioActivos\InventarioActivos\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\lapiz.scale-100.png
+C:\repositorio\TFG\App\InventarioActivos\InventarioActivos\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\papelera.scale-100.png
+C:\repositorio\TFG\App\InventarioActivos\InventarioActivos\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\suma.scale-100.png
+C:\repositorio\TFG\App\InventarioActivos\InventarioActivos\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\lapiz.scale-100.png
+C:\repositorio\TFG\App\InventarioActivos\InventarioActivos\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\papelera.scale-100.png
+C:\repositorio\TFG\App\InventarioActivos\InventarioActivos\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\suma.scale-100.png

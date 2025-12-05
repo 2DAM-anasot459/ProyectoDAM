@@ -146,7 +146,7 @@
                     </Border>
 
                     <!--Espacio entre las tarjetas y los botones-->
-                    <BoxView HeightRequest="12"/>
+                    <BoxView HeightRequest="1"/>
                     <!--Botones de acción-->
                     <Button Text="Crear Incidencia"
                             HeightRequest="48"
@@ -166,13 +166,13 @@
                             BackgroundColor="#E53935"
                             TextColor="White"
                             FontAttributes="Bold"/>
-                    <BoxView HeightRequest="10"/>
+                    <BoxView HeightRequest="1"/>
                 </VerticalStackLayout>
             </ScrollView>
             <!--Paneles de Filtro-->
             <!--Panel principal-->
             <Border x:Name="PanelFiltroPrincipal"
-                    IsVisible="True"
+                    IsVisible="False"
                     BackgroundColor="#FFEFEF"
                     Padding="16"
                     HorizontalOptions="End"

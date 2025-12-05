@@ -308,3 +308,6 @@ C:\repositorio\TFG\App\InventarioActivos\InventarioActivos\obj\Debug\net9.0-macc
 C:\repositorio\TFG\App\InventarioActivos\InventarioActivos\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\lupa.png
 C:\repositorio\TFG\App\InventarioActivos\InventarioActivos\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\calendario.png
 C:\repositorio\TFG\App\InventarioActivos\InventarioActivos\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\flechanavegar.png
+C:\repositorio\TFG\App\InventarioActivos\InventarioActivos\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\papelera.png
+C:\repositorio\TFG\App\InventarioActivos\InventarioActivos\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\suma.png
+C:\repositorio\TFG\App\InventarioActivos\InventarioActivos\obj\Debug\net9.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\lapiz.png

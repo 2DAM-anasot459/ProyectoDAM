@@ -3,28 +3,40 @@
   "WorkspaceRootPath": "C:\\repositorio\\TFG\\Agente\\Agente\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{345FF92F-AE84-48B2-822C-5AC01A0544FC}|Agente\\Agente.csproj|c:\\repositorio\\tfg\\agente\\agente\\agente\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{345FF92F-AE84-48B2-822C-5AC01A0544FC}|Agente\\Agente.csproj|solutionrelative:agente\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{345FF92F-AE84-48B2-822C-5AC01A0544FC}|Agente\\Agente.csproj|c:\\repositorio\\tfg\\agente\\agente\\agente\\formulario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{345FF92F-AE84-48B2-822C-5AC01A0544FC}|Agente\\Agente.csproj|solutionrelative:agente\\formulario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{345FF92F-AE84-48B2-822C-5AC01A0544FC}|Agente\\Agente.csproj|c:\\repositorio\\tfg\\agente\\agente\\agente\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{345FF92F-AE84-48B2-822C-5AC01A0544FC}|Agente\\Agente.csproj|solutionrelative:agente\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{345FF92F-AE84-48B2-822C-5AC01A0544FC}|Agente\\Agente.csproj|c:\\repositorio\\tfg\\agente\\agente\\agente\\formulario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{345FF92F-AE84-48B2-822C-5AC01A0544FC}|Agente\\Agente.csproj|solutionrelative:agente\\formulario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{345FF92F-AE84-48B2-822C-5AC01A0544FC}|Agente\\Agente.csproj|c:\\repositorio\\tfg\\agente\\agente\\agente\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{345FF92F-AE84-48B2-822C-5AC01A0544FC}|Agente\\Agente.csproj|solutionrelative:agente\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{345FF92F-AE84-48B2-822C-5AC01A0544FC}|Agente\\Agente.csproj|c:\\repositorio\\tfg\\agente\\agente\\agente\\recolector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{345FF92F-AE84-48B2-822C-5AC01A0544FC}|Agente\\Agente.csproj|solutionrelative:agente\\recolector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{345FF92F-AE84-48B2-822C-5AC01A0544FC}|Agente\\Agente.csproj|c:\\repositorio\\tfg\\agente\\agente\\agente\\formulario.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{345FF92F-AE84-48B2-822C-5AC01A0544FC}|Agente\\Agente.csproj|solutionrelative:agente\\formulario.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\repositorio\\TFG\\Agente\\Agente\\Agente\\obj\\Debug\\net8.0-windows\\Agente.csproj.FileListAbsolute.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Agente\\obj\\Debug\\net8.0-windows\\Agente.csproj.FileListAbsolute.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{345FF92F-AE84-48B2-822C-5AC01A0544FC}|Agente\\Agente.csproj|c:\\repositorio\\tfg\\agente\\agente\\agente\\formulario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{345FF92F-AE84-48B2-822C-5AC01A0544FC}|Agente\\Agente.csproj|solutionrelative:agente\\formulario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{345FF92F-AE84-48B2-822C-5AC01A0544FC}|Agente\\Agente.csproj|c:\\repositorio\\tfg\\agente\\agente\\agente\\datos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{345FF92F-AE84-48B2-822C-5AC01A0544FC}|Agente\\Agente.csproj|solutionrelative:agente\\datos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{345FF92F-AE84-48B2-822C-5AC01A0544FC}|Agente\\Agente.csproj|C:\\repositorio\\TFG\\Agente\\Agente\\agente\\formulario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{345FF92F-AE84-48B2-822C-5AC01A0544FC}|Agente\\Agente.csproj|solutionrelative:agente\\formulario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{345FF92F-AE84-48B2-822C-5AC01A0544FC}|Agente\\Agente.csproj|c:\\repositorio\\tfg\\agente\\agente\\agente\\recolector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{345FF92F-AE84-48B2-822C-5AC01A0544FC}|Agente\\Agente.csproj|solutionrelative:agente\\recolector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{345FF92F-AE84-48B2-822C-5AC01A0544FC}|Agente\\Agente.csproj|c:\\repositorio\\tfg\\agente\\agente\\agente\\formulario.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{345FF92F-AE84-48B2-822C-5AC01A0544FC}|Agente\\Agente.csproj|solutionrelative:agente\\formulario.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,45 +46,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Conexion.cs",
-              "DocumentMoniker": "C:\\repositorio\\TFG\\Agente\\Agente\\Agente\\Conexion.cs",
-              "RelativeDocumentMoniker": "Agente\\Conexion.cs",
-              "ToolTip": "C:\\repositorio\\TFG\\Agente\\Agente\\Agente\\Conexion.cs",
-              "RelativeToolTip": "Agente\\Conexion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIUAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T13:26:51.649Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Formulario.cs",
-              "DocumentMoniker": "C:\\repositorio\\TFG\\Agente\\Agente\\Agente\\Formulario.cs",
-              "RelativeDocumentMoniker": "Agente\\Formulario.cs",
-              "ToolTip": "C:\\repositorio\\TFG\\Agente\\Agente\\Agente\\Formulario.cs",
-              "RelativeToolTip": "Agente\\Formulario.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAIwF4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T10:30:26.884Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Recolector.cs",
-              "DocumentMoniker": "C:\\repositorio\\TFG\\Agente\\Agente\\Agente\\Recolector.cs",
-              "RelativeDocumentMoniker": "Agente\\Recolector.cs",
-              "ToolTip": "C:\\repositorio\\TFG\\Agente\\Agente\\Agente\\Recolector.cs",
-              "RelativeToolTip": "Agente\\Recolector.cs",
-              "ViewState": "AgIAAHABAAAAAAAAAAAwwIcBAABLAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T13:26:56.891Z",
+              "DocumentIndex": 4,
+              "Title": "Agente.csproj.FileListAbsolute.txt",
+              "DocumentMoniker": "C:\\repositorio\\TFG\\Agente\\Agente\\Agente\\obj\\Debug\\net8.0-windows\\Agente.csproj.FileListAbsolute.txt",
+              "RelativeDocumentMoniker": "Agente\\obj\\Debug\\net8.0-windows\\Agente.csproj.FileListAbsolute.txt",
+              "ToolTip": "C:\\repositorio\\TFG\\Agente\\Agente\\Agente\\obj\\Debug\\net8.0-windows\\Agente.csproj.FileListAbsolute.txt",
+              "RelativeToolTip": "Agente\\obj\\Debug\\net8.0-windows\\Agente.csproj.FileListAbsolute.txt",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-12-05T13:48:34.345Z",
               "EditorCaption": ""
             },
             {
@@ -84,8 +70,34 @@
               "ToolTip": "C:\\repositorio\\TFG\\Agente\\Agente\\Agente\\Formulario.cs [Dise\u00F1o]",
               "RelativeToolTip": "Agente\\Formulario.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T10:19:15.976Z",
+              "WhenOpened": "2025-12-05T13:35:27.195Z",
               "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Formulario.Designer.cs",
+              "DocumentMoniker": "C:\\repositorio\\TFG\\Agente\\Agente\\Agente\\Formulario.Designer.cs",
+              "RelativeDocumentMoniker": "Agente\\Formulario.Designer.cs",
+              "ToolTip": "C:\\repositorio\\TFG\\Agente\\Agente\\Agente\\Formulario.Designer.cs",
+              "RelativeToolTip": "Agente\\Formulario.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T13:29:31.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Conexion.cs",
+              "DocumentMoniker": "C:\\repositorio\\TFG\\Agente\\Agente\\Agente\\Conexion.cs",
+              "RelativeDocumentMoniker": "Agente\\Conexion.cs",
+              "ToolTip": "C:\\repositorio\\TFG\\Agente\\Agente\\Agente\\Conexion.cs",
+              "RelativeToolTip": "Agente\\Conexion.cs",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAcwJkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T13:26:51.649Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -102,15 +114,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "Formulario.cs",
+              "DocumentMoniker": "C:\\repositorio\\TFG\\Agente\\Agente\\Agente\\Formulario.cs",
+              "RelativeDocumentMoniker": "Agente\\Formulario.cs",
+              "ToolTip": "C:\\repositorio\\TFG\\Agente\\Agente\\Agente\\Formulario.cs",
+              "RelativeToolTip": "Agente\\Formulario.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowGAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T10:30:26.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Recolector.cs",
+              "DocumentMoniker": "C:\\repositorio\\TFG\\Agente\\Agente\\Agente\\Recolector.cs",
+              "RelativeDocumentMoniker": "Agente\\Recolector.cs",
+              "ToolTip": "C:\\repositorio\\TFG\\Agente\\Agente\\Agente\\Recolector.cs",
+              "RelativeToolTip": "Agente\\Recolector.cs",
+              "ViewState": "AgIAAKYBAAAAAAAAAAAAAKYBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T13:26:56.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Datos.cs",
               "DocumentMoniker": "C:\\repositorio\\TFG\\Agente\\Agente\\Agente\\Datos.cs",
               "RelativeDocumentMoniker": "Agente\\Datos.cs",
               "ToolTip": "C:\\repositorio\\TFG\\Agente\\Agente\\Agente\\Datos.cs",
               "RelativeToolTip": "Agente\\Datos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAYwDIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-27T11:43:54.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Formulario.resx",
+              "DocumentMoniker": "C:\\repositorio\\TFG\\Agente\\Agente\\Agente\\Formulario.resx",
+              "RelativeDocumentMoniker": "Agente\\Formulario.resx",
+              "ToolTip": "C:\\repositorio\\TFG\\Agente\\Agente\\Agente\\Formulario.resx",
+              "RelativeToolTip": "Agente\\Formulario.resx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-12-05T13:36:30.496Z",
               "EditorCaption": ""
             }
           ]
