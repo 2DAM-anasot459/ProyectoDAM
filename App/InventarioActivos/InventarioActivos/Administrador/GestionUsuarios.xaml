@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="InventarioActivos.Administrador.GestionUsuarios"
+             Shell.NavBarIsVisible="False">
+    <Grid RowDefinitions="Auto,*,Auto"
+              BackgroundColor="White">
+        <!--Cabecera-->
+        <Grid Grid.Row="0"
+                  BackgroundColor="#E53935"
+                  HeightRequest="60"
+                  Padding="16,10,16,10">
+            <Label Text="Gestión de Usuarios"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Start"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       TextColor="White"/>
+        </Grid>
+        <!--Contenido de la pagina-->
+        <ScrollView Grid.Row="1">
+            <VerticalStackLayout Spacing="12"
+                                 Padding="16,16,16,24">
+                <!--Titulo-->
+                <Label Text="Lista Usuario"
+                       FontSize="24"
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"
+                       TextColor="#212121"
+                       Margin="0,0,0,8"/>
+                <!--Tarjeta usuario ejemplo 1-->
+                <Border BackgroundColor="#FFEFEF"
+                        Stroke="#DDDDDD"
+                        StrokeThickness="1"
+                        Padding="16"
+                        Margin="0,0,0,8">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <Grid ColumnDefinitions="*,Auto"
+                          ColumnSpacing="10">
+                        <!--Datos usuario-->
+                        <VerticalStackLayout Grid.Column="0"
+                                             Spacing="2">
+                            <Label Text="Nombre"
+                                   FontSize="16"
+                                   FontAttributes="Bold"
+                                   TextColor="#222222"/>
+                            <Label Text="Apellidos"
+                                      FontSize="13"
+                                      TextColor="#555555"/>
+                            <Label Text="Tipo Usuario"
+                                   FontSize="13"
+                                   TextColor="#555555"/>
+                        </VerticalStackLayout>
+                        <!--Iconos de editar y eliminar-->
+                        <VerticalStackLayout Grid.Column="1"
+                                             Spacing="12"
+                                             HorizontalOptions="End"
+                                             VerticalOptions="Center">
+                            <Image Source="lapiz.png"
+                                   HeightRequest="24"
+                                   WidthRequest="24"
+                                   HorizontalOptions="End"/>
+                            <Image Source="papelera.png"
+                                   HeightRequest="24"
+                                   WidthRequest="24"
+                                   HorizontalOptions="End"/>
+                        </VerticalStackLayout>
+                    </Grid>
+                </Border>
+                <!--Tarjeta usuario ejemplo 2-->
+                <Border BackgroundColor="#FFEFEF"
+                        Stroke="#DDDDDD"
+                        StrokeThickness="1"
+                        Padding="16"
+                        Margin="0,0,0,8">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <Grid ColumnDefinitions="*,Auto"
+                          ColumnSpacing="10">
+                        <!--Datos usuario-->
+                        <VerticalStackLayout Grid.Column="0"
+                                             Spacing="2">
+                            <Label Text="Nombre"
+                                   FontSize="16"
+                                   FontAttributes="Bold"
+                                   TextColor="#222222"/>
+                            <Label Text="Apellidos"
+                                      FontSize="13"
+                                      TextColor="#555555"/>
+                            <Label Text="Tipo Usuario"
+                                   FontSize="13"
+                                   TextColor="#555555"/>
+                        </VerticalStackLayout>
+                        <!--Iconos de editar y eliminar-->
+                        <VerticalStackLayout Grid.Column="1"
+                                             Spacing="12"
+                                             HorizontalOptions="End"
+                                             VerticalOptions="Center">
+                            <Image Source="lapiz.png"
+                                   HeightRequest="24"
+                                   WidthRequest="24"
+                                   HorizontalOptions="End"/>
+                            <Image Source="papelera.png"
+                                   HeightRequest="24"
+                                   WidthRequest="24"
+                                   HorizontalOptions="End"/>
+                        </VerticalStackLayout>
+                    </Grid>
+                </Border>
+                <!--Tarjeta usuario ejemplo 3-->
+                <Border BackgroundColor="#FFEFEF"
+                        Stroke="#DDDDDD"
+                        StrokeThickness="1"
+                        Padding="16"
+                        Margin="0,0,0,8">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <Grid ColumnDefinitions="*,Auto"
+                          ColumnSpacing="10">
+                        <!--Datos usuario-->
+                        <VerticalStackLayout Grid.Column="0"
+                                             Spacing="2">
+                            <Label Text="Nombre"
+                                   FontSize="16"
+                                   FontAttributes="Bold"
+                                   TextColor="#222222"/>
+                            <Label Text="Apellidos"
+                                      FontSize="13"
+                                      TextColor="#555555"/>
+                            <Label Text="Tipo Usuario"
+                                   FontSize="13"
+                                   TextColor="#555555"/>
+                        </VerticalStackLayout>
+                        <!--Iconos de editar y eliminar-->
+                        <VerticalStackLayout Grid.Column="1"
+                                             Spacing="12"
+                                             HorizontalOptions="End"
+                                             VerticalOptions="Center">
+                            <Image Source="lapiz.png"
+                                   HeightRequest="24"
+                                   WidthRequest="24"
+                                   HorizontalOptions="End"/>
+                            <Image Source="papelera.png"
+                                   HeightRequest="24"
+                                   WidthRequest="24"
+                                   HorizontalOptions="End"/>
+                        </VerticalStackLayout>
+                    </Grid>
+                </Border>
+                <!--Boton añadir usuario-->
+                <Button Text="Añadir Usuario"
+                        HeightRequest="50"
+                        CornerRadius="25"
+                        BackgroundColor="#2E7D32"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        FontSize="16"
+                        Margin="0,8,0,0"/>
+            </VerticalStackLayout>
+        </ScrollView>
+        <!--Barra de navegación inferior-->
+        <Grid Grid.Row="2"
+                  BackgroundColor="#E53935"                  
+                  Padding="0,6"
+                  ColumnDefinitions="*,*,*,*">
+            <!--Inicio-->
+            <VerticalStackLayout Grid.Column="0"
+                                 Spacing="2"
+                                 HorizontalOptions="Center">
+                <Border BackgroundColor="White"
+                        HeightRequest="40"
+                        WidthRequest="40">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <Image Source="home.png"
+                           HeightRequest="24"
+                           WidthRequest="24"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                </Border>
+                <Label Text="Inicio"
+                       FontSize="12"
+                       TextColor="White"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+            </VerticalStackLayout>
+            <!--Incidencias-->
+            <VerticalStackLayout Grid.Column="1"
+                                 Spacing="2"
+                                 HorizontalOptions="Center">
+                <Border BackgroundColor="White"
+                        HeightRequest="40"
+                        WidthRequest="40">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <Image Source="incidencias.png"
+                           HeightRequest="24"
+                           WidthRequest="24"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                </Border>
+                <Label Text="Incidencias"
+                       FontSize="12"
+                       TextColor="White"/>
+            </VerticalStackLayout>
+            <!--Localización-->
+            <VerticalStackLayout Grid.Column="2"
+                                 Spacing="2"
+                                 HorizontalOptions="Center">
+                <Border BackgroundColor="White"
+                        HeightRequest="40"
+                        WidthRequest="40">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <Image Source="localizacion.png"
+                           HeightRequest="24"
+                           WidthRequest="24"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                </Border>
+                <Label Text="Localización"
+                       FontSize="12"
+                       TextColor="White"/>
+            </VerticalStackLayout>
+            <!--Usuarios-->
+            <VerticalStackLayout Grid.Column="3"
+                                 Spacing="2"
+                                 HorizontalOptions="Center">
+                <Border BackgroundColor="White"
+                        HeightRequest="40"
+                        WidthRequest="40">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <Image Source="usuario.png"
+                           HeightRequest="24"
+                           WidthRequest="24"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                </Border>
+                <Label Text="Incidencias"
+                       FontSize="12"
+                       TextColor="White"/>
+            </VerticalStackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>

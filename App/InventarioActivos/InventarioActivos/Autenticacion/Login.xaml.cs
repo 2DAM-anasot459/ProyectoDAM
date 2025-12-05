@@ -1,4 +1,4 @@
-namespace InventarioActivos;
+namespace InventarioActivos.Autenticacion;
 
 public partial class Login : ContentPage
 {

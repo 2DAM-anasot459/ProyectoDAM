@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="InventarioActivos.Autenticacion.CambioContrasena"
+             Shell.NavBarIsVisible="False">
+    <!--Fondo degradado-->
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Color="#FF4B2B" Offset="0.0" />
+            <GradientStop Color="#FF9068" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <!--Contenedor para centrar la pantalla-->
+    <Grid Padding="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0"
+            Padding="30,40"              
+            BackgroundColor="#FFFFFFE0"
+            VerticalOptions="Center"
+            HorizontalOptions="Center">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="30" />
+            </Border.StrokeShape>
+            <VerticalStackLayout Spacing="20">
+                <!--Logo--> 
+                <Image Source="logo_isla.png"
+                    HeightRequest="70"
+                    WidthRequest="70"
+                    HorizontalOptions="Center" />
+                <!--Titulo-->
+                <Label Text="Cambio Contraseña"
+                    FontSize="28"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    TextColor="#1F2933"/>
+                <!--Campos Usuario y Contraseña-->
+                <Border BackgroundColor="White"                      
+                    Padding="10"
+                    Stroke="#E5E7EB">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="15" />
+                    </Border.StrokeShape>
+                    <Entry Placeholder="Usuario"
+                        TextColor="#1F2933"
+                        PlaceholderColor="#9CA3AF"/>
+                </Border>
+                <Border BackgroundColor="White"                      
+                    Padding="10"
+                    Stroke="#E5E7EB">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="15" />
+                    </Border.StrokeShape>
+                    <Entry Placeholder="Nueva Contraseña"
+                        IsPassword="True"
+                        TextColor="#1F2933"
+                        PlaceholderColor="#9CA3AF"/>
+                </Border>
+                <Border BackgroundColor="White"                      
+                    Padding="10"
+                    Stroke="#E5E7EB">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="15" />
+                    </Border.StrokeShape>
+                    <Entry Placeholder="Confirmar Contraseña"
+                        IsPassword="True"
+                        TextColor="#1F2933"
+                        PlaceholderColor="#9CA3AF"/>
+                </Border>
+
+                <!--Botón cambiar contraseña-->
+                <Button Text="Cambiar Contraseña"
+                     CornerRadius="20"
+                     HeightRequest="48"
+                     FontAttributes="Bold"
+                     BackgroundColor="#1D4ED8"
+                     TextColor="White"
+                     HorizontalOptions="Center"/>
+            </VerticalStackLayout>
+        </Border>
+    </Grid>
+</ContentPage>

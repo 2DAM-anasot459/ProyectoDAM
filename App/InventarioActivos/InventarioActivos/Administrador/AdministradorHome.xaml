@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="InventarioActivos.Administrador.AdministradorHome"
+             Shell.NavBarIsVisible="False">
+
+    <Grid RowDefinitions="Auto,*,Auto"
+              BackgroundColor="White">
+
+        <!--Cabecera-->
+        <Grid Grid.Row="0"
+                  BackgroundColor="#E53935"
+                  HeightRequest="60"
+                  Padding="16,10,16,10">
+            <Label Text="Panel de Administración"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Start"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       TextColor="White"/>
+        </Grid>
+        <!--Contenido con los tres botones-->
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+                <VerticalStackLayout Grid.Row="1"
+                                 Spacing="30"
+                                 Padding="30,0"
+                                 VerticalOptions="Center"
+                                 HorizontalOptions="Center">
+                <!--Botón Gestión de Incidencias-->
+                <Border Background="#FB8C00"
+                        HeightRequest="60"
+                        WidthRequest="260">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="16"/>
+                    </Border.StrokeShape>
+                    <Label Text="Gestión de Incidencias"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           TextColor="White"/>
+                </Border>
+
+                <!--Botón Gestiçon de Localizaciones-->
+                <Border Background="#43A047"
+                        HeightRequest="60"
+                        WidthRequest="260">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="16"/>
+                    </Border.StrokeShape>
+                    <Label Text="Gestión de Localizaciones"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           TextColor="White"/>
+                </Border>
+
+                <!--Botón Gestión de Usuarios-->
+                <Border Background="#1E88E5"
+                        HeightRequest="60"
+                        WidthRequest="260">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="16"/>
+                    </Border.StrokeShape>
+                    <Label Text="Gestión de Usuarios"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           TextColor="White"/>
+                </Border>
+            </VerticalStackLayout>
+        </Grid>
+        
+        <!--Barra de navegación-->
+        <Grid Grid.Row="2"
+                  BackgroundColor="#E53935"                  
+                  Padding="0,6"
+                  ColumnDefinitions="*,*,*,*">
+            <!--Inicio-->
+            <VerticalStackLayout Grid.Column="0"
+                                 Spacing="2"
+                                 HorizontalOptions="Center">
+                <Border BackgroundColor="White"
+                        HeightRequest="40"
+                        WidthRequest="40">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <Image Source="home.png"
+                           HeightRequest="24"
+                           WidthRequest="24"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                </Border>
+                <Label Text="Inicio"
+                       FontSize="12"
+                       TextColor="White"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+            </VerticalStackLayout>
+            <!--Incidencias-->
+            <VerticalStackLayout Grid.Column="1"
+                                 Spacing="2"
+                                 HorizontalOptions="Center">
+                <Border BackgroundColor="White"
+                        HeightRequest="40"
+                        WidthRequest="40">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <Image Source="incidencias.png"
+                           HeightRequest="24"
+                           WidthRequest="24"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                </Border>
+                <Label Text="Incidencias"
+                       FontSize="12"
+                       TextColor="White"/>
+            </VerticalStackLayout>
+            <!--Localización-->
+            <VerticalStackLayout Grid.Column="2"
+                                 Spacing="2"
+                                 HorizontalOptions="Center">
+                <Border BackgroundColor="White"
+                        HeightRequest="40"
+                        WidthRequest="40">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <Image Source="localizacion.png"
+                           HeightRequest="24"
+                           WidthRequest="24"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                </Border>
+                <Label Text="Localización"
+                       FontSize="12"
+                       TextColor="White"/>
+            </VerticalStackLayout>
+            <!--Usuarios-->
+            <VerticalStackLayout Grid.Column="3"
+                                 Spacing="2"
+                                 HorizontalOptions="Center">
+                <Border BackgroundColor="White"
+                        HeightRequest="40"
+                        WidthRequest="40">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <Image Source="usuario.png"
+                           HeightRequest="24"
+                           WidthRequest="24"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                </Border>
+                <Label Text="Incidencias"
+                       FontSize="12"
+                       TextColor="White"/>
+            </VerticalStackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>

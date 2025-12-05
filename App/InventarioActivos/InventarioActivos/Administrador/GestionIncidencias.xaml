@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="InventarioActivos.Administrador.GestionIncidencias"
+             Shell.NavBarIsVisible="False">
+    <Grid RowDefinitions="Auto,*,Auto"
+              BackgroundColor="White">
+        <!--Cabecera-->
+        <Grid Grid.Row="0"
+                  BackgroundColor="#E53935"
+                  HeightRequest="60"
+                  Padding="16,10,16,10">
+            <Label Text="Gestión de Incidencias"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Start"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       TextColor="White"/>
+            <!--Icono Filtro-->
+            <Border Grid.Column="1"
+                    BackgroundColor="White"
+                    HeightRequest="30"
+                    WidthRequest="30"
+                    HorizontalOptions="End"
+                    VerticalOptions="Center">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="15"/>
+                </Border.StrokeShape>
+                <Image Source="filtrar.png"
+                       HeightRequest="16"
+                       WidthRequest="16"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+            </Border>
+        </Grid>
+
+        <!--Contenido de la página-->
+        <Grid Grid.Row="1">
+            <!--Aquí va el contenido de la gestión de incidencias-->
+            <ScrollView>
+                <VerticalStackLayout Padding="16,20"
+                                     Spacing="16">
+                    <!--Ejemplo 1 tarjeta Incidencia-->
+                    <Border Background="#F2F2F2"
+                            Stroke="#BDBDBD"
+                            StrokeThickness="1"
+                            Padding="16"
+                            Margin="0,0,0,4">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="12"/>
+                        </Border.StrokeShape>
+                        <Grid ColumnDefinitions="*,Auto">
+                            <VerticalStackLayout Grid.Column="0"
+                                                 Spacing="4">
+                                <Label Text="Título"
+                                       FontAttributes="Bold"
+                                       FontSize="16"
+                                       TextColor="#212121"/>
+                                <Label Text="Descripción"
+                                       FontSize="13"
+                                       TextColor="#616161"/>
+                            </VerticalStackLayout>
+                            <!--Ejemplo Estado Terminado-->
+                            <Border Grid.Column="1"
+                                    BackgroundColor="#4CAF50"
+                                    Padding="8,4"
+                                    VerticalOptions="Start">
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="8"/>
+                                </Border.StrokeShape>
+                                <Label Text="Terminado"
+                                       FontSize="12"
+                                       FontAttributes="Bold"
+                                       TextColor="White"/>
+                            </Border>
+                        </Grid>
+                    </Border>
+
+                    <!--Ejemplo 2 tarjeta Incidencia-->
+                    <Border Background="#F2F2F2"
+                            Stroke="#BDBDBD"
+                            StrokeThickness="1"
+                            Padding="16">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="12"/>
+                        </Border.StrokeShape>
+                        <Grid ColumnDefinitions="*,Auto">
+                            <VerticalStackLayout Grid.Column="0"
+                                                 Spacing="4">
+                                <Label Text="Título"
+                                       FontAttributes="Bold"
+                                       FontSize="16"
+                                       TextColor="#212121"/>
+                                <Label Text="Descripción"
+                                       FontSize="13"
+                                       TextColor="#616161"/>
+                            </VerticalStackLayout>
+                            <!--Ejemplo Estado En proceso-->
+                            <Border Grid.Column="1"
+                                    BackgroundColor="#FFEB3B"
+                                    Padding="8,4"
+                                    VerticalOptions="Start">
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="8"/>
+                                </Border.StrokeShape>
+                                <Label Text="En proceso"
+                                       FontSize="12"
+                                       FontAttributes="Bold"
+                                       TextColor="White"/>
+                            </Border>
+                        </Grid>
+                    </Border>
+                    <!--Ejemplo 3 tarjeta Incidencia-->
+                    <Border Background="#F2F2F2"
+                            Stroke="#BDBDBD"
+                            StrokeThickness="1"
+                            Padding="16">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="12"/>
+                        </Border.StrokeShape>
+                        <Grid ColumnDefinitions="*,Auto">
+                            <VerticalStackLayout Grid.Column="0"
+                                                 Spacing="4">
+                                <Label Text="Título"
+                                       FontAttributes="Bold"
+                                       FontSize="16"
+                                       TextColor="#212121"/>
+                                <Label Text="Descripción"
+                                       FontSize="13"
+                                       TextColor="#616161"/>
+                            </VerticalStackLayout>
+                            <!--Ejemplo Estado Pendiente-->
+                            <Border Grid.Column="1"
+                                    BackgroundColor="#F44336"
+                                    Padding="8,4"
+                                    VerticalOptions="Start">
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="8"/>
+                                </Border.StrokeShape>
+                                <Label Text="Pendiente"
+                                       FontSize="12"
+                                       FontAttributes="Bold"
+                                       TextColor="White"/>
+                            </Border>
+                        </Grid>
+                    </Border>
+
+                    <!--Espacio entre las tarjetas y los botones-->
+                    <BoxView HeightRequest="12"/>
+                    <!--Botones de acción-->
+                    <Button Text="Crear Incidencia"
+                            HeightRequest="48"
+                            CornerRadius="24"
+                            BackgroundColor="#43A047"
+                            TextColor="White"
+                            FontAttributes="Bold"/>
+                    <Button Text="Editar Incidencia"
+                            HeightRequest="48"
+                            CornerRadius="24"
+                            BackgroundColor="#FB8C00"
+                            TextColor="White"
+                            FontAttributes="Bold"/>
+                    <Button Text="Eliminar Incidencia"
+                            HeightRequest="48"
+                            CornerRadius="24"
+                            BackgroundColor="#E53935"
+                            TextColor="White"
+                            FontAttributes="Bold"/>
+                    <BoxView HeightRequest="10"/>
+                </VerticalStackLayout>
+            </ScrollView>
+            <!--Paneles de Filtro-->
+            <!--Panel principal-->
+            <Border x:Name="PanelFiltroPrincipal"
+                    IsVisible="True"
+                    BackgroundColor="#FFEFEF"
+                    Padding="16"
+                    HorizontalOptions="End"
+                    VerticalOptions="Start"
+                    Margin="0,10,10,0">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="20"/>
+                </Border.StrokeShape>
+                <Grid RowDefinitions="Auto,Auto">
+                    <!--Filtro por Estado-->
+                    <Grid RowSpacing="0"
+                          RowDefinitions="Auto,Auto">
+                        <Grid ColumnDefinitions="Auto,*"
+                              Row="0"
+                              Padding="0,0,0,8">
+                            <Label Text="←"
+                                   FontSize="14"
+                                   VerticalOptions="Center"
+                                   Margin="0,0,8,0"/>
+                            <Label Text="Estado:"
+                                   FontSize="14"
+                                   VerticalOptions="Center"/>
+                        </Grid>
+                        <BoxView HeightRequest="1"
+                                 BackgroundColor="#D6D6D6"/>
+                    </Grid>
+                    <!--Filtro por Activo-->
+                    <Grid Grid.Row="1"
+                          ColumnDefinitions="Auto,*"
+                          Padding="0,8,0,0">
+                        <Label Text="←"
+                               FontSize="14"
+                               VerticalOptions="Center"
+                               Margin="0,0,8,0"/>
+                        <Label Text="Activo"
+                               FontSize="14"
+                               VerticalOptions="Center"/>
+                    </Grid>
+                </Grid>
+            </Border>
+
+            <!--Panel Filtro Estado-->
+            <Border x:Name="PanelFiltroEstado"
+                    IsVisible="False"
+                    BackgroundColor="#E8FDE8"
+                    Padding="16"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"
+                    Margin="0,70,0,0">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="20"/>
+                </Border.StrokeShape>
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="Terminada ✓"
+                           FontSize="16" />
+                    <BoxView HeightRequest="1"
+                             BackgroundColor="#C5E1A5" />
+                    <Label Text="En Proceso"
+                           FontSize="16" />
+                    <BoxView HeightRequest="1"
+                             BackgroundColor="#C5E1A5" />
+                    <Label Text="Pendiente"
+                           FontSize="16" />
+                </VerticalStackLayout>
+            </Border>
+            <!--Panel Filtro Activo-->
+            <Border x:Name="PanelFiltroActivo"
+                    IsVisible="False"
+                    BackgroundColor="#E8FFFF"
+                    Padding="16"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"
+                    Margin="0,70,0,0">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="20" />
+                </Border.StrokeShape>
+
+                <Grid ColumnDefinitions="*,Auto">
+                    <!-- Caja de búsqueda -->
+                    <Border BackgroundColor="White"
+                            Padding="10"
+                            Grid.Column="0">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="18" />
+                        </Border.StrokeShape>
+                        <Entry Placeholder="Buscar activo..."
+                               PlaceholderColor="#9CA3AF"
+                               TextColor="Black" />
+                    </Border>
+                    <!-- Icono de búsqueda -->
+                    <Border HeightRequest="40"
+                            WidthRequest="40"
+                            Grid.Column="1"
+                            Margin="8,0,0,0">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="20" />
+                        </Border.StrokeShape>
+                        <Image Source="lupa.png"
+                                 HeightRequest="20"
+                                 WidthRequest="20"
+                                 HorizontalOptions="Center"
+                                 VerticalOptions="Center" />
+                    </Border>
+                </Grid>
+            </Border>
+        </Grid>
+        <!--Barra de navegación inferior-->
+        <Grid Grid.Row="2"
+                  BackgroundColor="#E53935"                  
+                  Padding="0,6"
+                  ColumnDefinitions="*,*,*,*">
+            <!--Inicio-->
+            <VerticalStackLayout Grid.Column="0"
+                                 Spacing="2"
+                                 HorizontalOptions="Center">
+                <Border BackgroundColor="White"
+                        HeightRequest="40"
+                        WidthRequest="40">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <Image Source="home.png"
+                           HeightRequest="24"
+                           WidthRequest="24"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                </Border>
+                <Label Text="Inicio"
+                       FontSize="12"
+                       TextColor="White"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+            </VerticalStackLayout>
+            <!--Incidencias-->
+            <VerticalStackLayout Grid.Column="1"
+                                 Spacing="2"
+                                 HorizontalOptions="Center">
+                <Border BackgroundColor="White"
+                        HeightRequest="40"
+                        WidthRequest="40">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <Image Source="incidencias.png"
+                           HeightRequest="24"
+                           WidthRequest="24"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                </Border>
+                <Label Text="Incidencias"
+                       FontSize="12"
+                       TextColor="White"/>
+            </VerticalStackLayout>
+            <!--Localización-->
+            <VerticalStackLayout Grid.Column="2"
+                                 Spacing="2"
+                                 HorizontalOptions="Center">
+                <Border BackgroundColor="White"
+                        HeightRequest="40"
+                        WidthRequest="40">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <Image Source="localizacion.png"
+                           HeightRequest="24"
+                           WidthRequest="24"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                </Border>
+                <Label Text="Localización"
+                       FontSize="12"
+                       TextColor="White"/>
+            </VerticalStackLayout>
+            <!--Usuarios-->
+            <VerticalStackLayout Grid.Column="3"
+                                 Spacing="2"
+                                 HorizontalOptions="Center">
+                <Border BackgroundColor="White"
+                        HeightRequest="40"
+                        WidthRequest="40">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <Image Source="usuario.png"
+                           HeightRequest="24"
+                           WidthRequest="24"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                </Border>
+                <Label Text="Incidencias"
+                       FontSize="12"
+                       TextColor="White"/>
+            </VerticalStackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>

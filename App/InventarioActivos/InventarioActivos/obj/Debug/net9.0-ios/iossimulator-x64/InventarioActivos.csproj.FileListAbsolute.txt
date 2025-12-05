@@ -307,3 +307,15 @@ C:\repositorio\TFG\App\InventarioActivos\InventarioActivos\obj\Debug\net9.0-ios\
 C:\repositorio\TFG\App\InventarioActivos\InventarioActivos\obj\Debug\net9.0-ios\iossimulator-x64\InventarioActivos.genruntimeconfig.cache
 C:\repositorio\TFG\App\InventarioActivos\InventarioActivos\obj\Debug\net9.0-ios\iossimulator-x64\ref\InventarioActivos.dll
 C:\repositorio\TFG\App\InventarioActivos\InventarioActivos\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\r\Resources\logo_isla.png
+C:\repositorio\TFG\App\InventarioActivos\InventarioActivos\bin\Debug\net9.0-ios\iossimulator-x64\Microsoft.Maui.Controls.HotReload.Forms.dll
+C:\repositorio\TFG\App\InventarioActivos\InventarioActivos\bin\Debug\net9.0-ios\iossimulator-x64\Microsoft.VisualStudio.DesignTools.MobileTapContracts.dll
+C:\repositorio\TFG\App\InventarioActivos\InventarioActivos\bin\Debug\net9.0-ios\iossimulator-x64\Microsoft.VisualStudio.DesignTools.TapContract.dll
+C:\repositorio\TFG\App\InventarioActivos\InventarioActivos\bin\Debug\net9.0-ios\iossimulator-x64\Microsoft.VisualStudio.DesignTools.XamlTapContract.dll
+C:\repositorio\TFG\App\InventarioActivos\InventarioActivos\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\r\Resources\usuario.png
+C:\repositorio\TFG\App\InventarioActivos\InventarioActivos\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\r\Resources\home.png
+C:\repositorio\TFG\App\InventarioActivos\InventarioActivos\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\r\Resources\incidencias.png
+C:\repositorio\TFG\App\InventarioActivos\InventarioActivos\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\r\Resources\localizacion.png
+C:\repositorio\TFG\App\InventarioActivos\InventarioActivos\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\r\Resources\filtrar.png
+C:\repositorio\TFG\App\InventarioActivos\InventarioActivos\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\r\Resources\lupa.png
+C:\repositorio\TFG\App\InventarioActivos\InventarioActivos\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\r\Resources\calendario.png
+C:\repositorio\TFG\App\InventarioActivos\InventarioActivos\obj\Debug\net9.0-ios\iossimulator-x64\resizetizer\r\Resources\flechanavegar.png

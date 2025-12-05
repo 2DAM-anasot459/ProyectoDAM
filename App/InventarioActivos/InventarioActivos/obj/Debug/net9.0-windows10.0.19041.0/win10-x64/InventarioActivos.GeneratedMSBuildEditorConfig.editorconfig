@@ -24,6 +24,48 @@ build_property.CsWinRTUseWindowsUIXamlProjections = false
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
+[C:/repositorio/TFG/App/InventarioActivos/InventarioActivos/Administrador/AdministradorHome.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InventarioActivos.Administrador.AdministradorHome.xaml
+build_metadata.AdditionalFiles.TargetPath = Administrador\AdministradorHome.xaml
+build_metadata.AdditionalFiles.RelativePath = Administrador\AdministradorHome.xaml
+
+[C:/repositorio/TFG/App/InventarioActivos/InventarioActivos/Administrador/CrearUsuario.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InventarioActivos.Administrador.CrearUsuario.xaml
+build_metadata.AdditionalFiles.TargetPath = Administrador\CrearUsuario.xaml
+build_metadata.AdditionalFiles.RelativePath = Administrador\CrearUsuario.xaml
+
+[C:/repositorio/TFG/App/InventarioActivos/InventarioActivos/Administrador/EditarIncidencia.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InventarioActivos.Administrador.EditarIncidencia.xaml
+build_metadata.AdditionalFiles.TargetPath = Administrador\EditarIncidencia.xaml
+build_metadata.AdditionalFiles.RelativePath = Administrador\EditarIncidencia.xaml
+
+[C:/repositorio/TFG/App/InventarioActivos/InventarioActivos/Administrador/EditarUsuario.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InventarioActivos.Administrador.EditarUsuario.xaml
+build_metadata.AdditionalFiles.TargetPath = Administrador\EditarUsuario.xaml
+build_metadata.AdditionalFiles.RelativePath = Administrador\EditarUsuario.xaml
+
+[C:/repositorio/TFG/App/InventarioActivos/InventarioActivos/Administrador/GestionIncidencias.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InventarioActivos.Administrador.GestionIncidencias.xaml
+build_metadata.AdditionalFiles.TargetPath = Administrador\GestionIncidencias.xaml
+build_metadata.AdditionalFiles.RelativePath = Administrador\GestionIncidencias.xaml
+
+[C:/repositorio/TFG/App/InventarioActivos/InventarioActivos/Administrador/GestionUsuarios.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InventarioActivos.Administrador.GestionUsuarios.xaml
+build_metadata.AdditionalFiles.TargetPath = Administrador\GestionUsuarios.xaml
+build_metadata.AdditionalFiles.RelativePath = Administrador\GestionUsuarios.xaml
+
+[C:/repositorio/TFG/App/InventarioActivos/InventarioActivos/Administrador/NuevaIncidencia.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InventarioActivos.Administrador.NuevaIncidencia.xaml
+build_metadata.AdditionalFiles.TargetPath = Administrador\NuevaIncidencia.xaml
+build_metadata.AdditionalFiles.RelativePath = Administrador\NuevaIncidencia.xaml
+
 [C:/repositorio/TFG/App/InventarioActivos/InventarioActivos/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = InventarioActivos.App.xaml
@@ -36,11 +78,17 @@ build_metadata.AdditionalFiles.ManifestResourceName = InventarioActivos.AppShell
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[C:/repositorio/TFG/App/InventarioActivos/InventarioActivos/Login.xaml]
+[C:/repositorio/TFG/App/InventarioActivos/InventarioActivos/Autenticacion/CambioContrasena.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = InventarioActivos.Login.xaml
-build_metadata.AdditionalFiles.TargetPath = Login.xaml
-build_metadata.AdditionalFiles.RelativePath = Login.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InventarioActivos.Autenticacion.CambioContrasena.xaml
+build_metadata.AdditionalFiles.TargetPath = Autenticacion\CambioContrasena.xaml
+build_metadata.AdditionalFiles.RelativePath = Autenticacion\CambioContrasena.xaml
+
+[C:/repositorio/TFG/App/InventarioActivos/InventarioActivos/Autenticacion/Login.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InventarioActivos.Autenticacion.Login.xaml
+build_metadata.AdditionalFiles.TargetPath = Autenticacion\Login.xaml
+build_metadata.AdditionalFiles.RelativePath = Autenticacion\Login.xaml
 
 [C:/repositorio/TFG/App/InventarioActivos/InventarioActivos/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

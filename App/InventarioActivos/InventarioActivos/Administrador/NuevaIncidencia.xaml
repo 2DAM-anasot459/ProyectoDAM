@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="InventarioActivos.Administrador.NuevaIncidencia"
+             Shell.NavBarIsVisible="False">
+    <Grid RowDefinitions="Auto,*,Auto"
+              BackgroundColor="White">
+        <!--Cabecera-->
+        <Grid Grid.Row="0"
+                  BackgroundColor="#E53935"
+                  HeightRequest="60"
+                  Padding="16,10,16,10">
+            <Label Text="Nueva Incidencia"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Start"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       TextColor="White"/>
+        </Grid>
+        <!--Contenido-->
+        <ScrollView Grid.Row="1">
+            <Grid>
+                <!--Tarjeta Nueva Incidencia-->
+                <Border BackgroundColor="#FFEFEF"
+                        Margin="16,16,16,32"
+                        Padding="16,16"
+                        HorizontalOptions="Fill"
+                        VerticalOptions="Start">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="30"/>
+                    </Border.StrokeShape>
+                    <VerticalStackLayout Spacing="10">
+                        <!--Titulo-->
+                        <Label Text="Nueva Incidencia"
+                               FontSize="24"
+                               FontAttributes="Bold"
+                               TextColor="#212121"
+                               Margin="0,0,0,8"/>
+                        <!--Titulo Incidencia-->
+                        <Label Text="Título"
+                               FontSize="13"
+                               TextColor="#555555"/>
+                        <Border BackgroundColor="White"
+                                Stroke="#DDDDDD"
+                                StrokeThickness="1"
+                                HeightRequest="44">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="10"/>
+                            </Border.StrokeShape>
+                            <Entry Placeholder="Título Incidencia"
+                                   Margin="10,0"
+                                   TextColor="Black"
+                                   PlaceholderColor="#A0A0A0"/>
+                        </Border>
+                        <!--Descripción Incidencia-->
+                        <Label Text="Descripción"
+                               FontSize="13"
+                               TextColor="#555555"
+                                Margin="0,8,0,0"/>
+                        <Border BackgroundColor="White"
+                                Stroke="#DDDDDD"
+                                StrokeThickness="1"
+                                HeightRequest="90">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="10"/>
+                            </Border.StrokeShape>
+                            <Editor Placeholder="Descripción Incidencia"
+                                    Margin="10,4"
+                                    AutoSize="TextChanges"
+                                    TextColor="Black"
+                                    PlaceholderColor="#A0A0A0"/>
+                        </Border>
+                        <!--Usuario-->
+                        <Label Text="Usuario"
+                               FontSize="13"
+                               TextColor="#555555"
+                                Margin="0,8,0,0"/>
+                        <Border BackgroundColor="White"
+                                Stroke="#DDDDDD"
+                                StrokeThickness="1"
+                                HeightRequest="44">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="10"/>
+                            </Border.StrokeShape>
+                            <Entry Placeholder="Usuario al que va dirigida"
+                                   Margin="10,0"
+                                   TextColor="Black"
+                                   PlaceholderColor="#A0A0A0"/>
+                        </Border>
+                        <!--Activo (Combo)-->
+                        <Label Text="Activo"
+                               FontSize="13"
+                               TextColor="#555555"
+                                Margin="0,8,0,0"/>
+                        <Border BackgroundColor="White"
+                                Stroke="#DDDDDD"
+                                StrokeThickness="1"
+                                HeightRequest="44">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="10"/>
+                            </Border.StrokeShape>
+                            <Grid ColumnDefinitions="*,Auto">
+                                <Label Text="Activo que tiene la incidencia"
+                                       Margin="10,0"
+                                       VerticalOptions="Center"
+                                       TextColor="#A0A0A0"/>
+                                <Image Grid.Column="1"
+                                       Source="flechanavegar.png"
+                                       HeightRequest="16"
+                                       WidthRequest="16"
+                                       Margin="0,0,10,0"
+                                       VerticalOptions="Center"
+                                       HorizontalOptions="End"/>
+                            </Grid>
+                        </Border>
+                        <!--Fecha-->
+                        <Label Text="Fecha"
+                               FontSize="13"
+                               TextColor="#555555"
+                                Margin="0,8,0,0"/>
+                        <Border BackgroundColor="White"
+                                Stroke="#DDDDDD"
+                                StrokeThickness="1"
+                                HeightRequest="44">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="10"/>
+                            </Border.StrokeShape>
+                            <Grid ColumnDefinitions="*,Auto">
+                                <DatePicker Margin="8,0"
+                                            VerticalOptions="Center"
+                                            TextColor="Black"
+                                            Format="dd/MM/yyyy"/>
+                                <Image Grid.Column="1"
+                                       Source="calendario.png"
+                                       HeightRequest="16"
+                                       WidthRequest="16"
+                                       Margin="0,0,10,0"
+                                       VerticalOptions="Center"
+                                       HorizontalOptions="End"/>
+                            </Grid>
+                        </Border>
+                        <!--Estado (Combo)-->
+                        <Label Text="Estado"
+                               FontSize="13"
+                               TextColor="#555555"
+                                Margin="0,8,0,0"/>
+                        <Border BackgroundColor="White"
+                                Stroke="#DDDDDD"
+                                StrokeThickness="1"
+                                HeightRequest="44">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="10"/>
+                            </Border.StrokeShape>
+                            <Grid ColumnDefinitions="*,Auto">
+                                <Label Text="Estado Incidencia"
+                                       Margin="10,0"
+                                       VerticalOptions="Center"
+                                       TextColor="#A0A0A0"/>
+                                <Image Grid.Column="1"
+                                       Source="flechanavegar.png"
+                                       HeightRequest="16"
+                                       WidthRequest="16"
+                                       Margin="0,0,10,0"
+                                       VerticalOptions="Center"
+                                       HorizontalOptions="End"/>
+                            </Grid>
+                        </Border>
+                        <!--Botón Crear-->
+                        <Button Text="Crear Incidencia"
+                                Margin="0,16,0,0"
+                                HeightRequest="50"
+                                CornerRadius="25"
+                                BackgroundColor="#1565C0"
+                                TextColor="White"
+                                FontAttributes="Bold"
+                                FontSize="16"/>
+                    </VerticalStackLayout>
+                </Border>
+            </Grid>
+        </ScrollView>
+
+        <!--Barra de navegación inferior-->
+        <Grid Grid.Row="2"
+                  BackgroundColor="#E53935"                  
+                  Padding="0,6"
+                  ColumnDefinitions="*,*,*,*">
+            <!--Inicio-->
+            <VerticalStackLayout Grid.Column="0"
+                                 Spacing="2"
+                                 HorizontalOptions="Center">
+                <Border BackgroundColor="White"
+                        HeightRequest="40"
+                        WidthRequest="40">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <Image Source="home.png"
+                           HeightRequest="24"
+                           WidthRequest="24"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                </Border>
+                <Label Text="Inicio"
+                       FontSize="12"
+                       TextColor="White"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+            </VerticalStackLayout>
+            <!--Incidencias-->
+            <VerticalStackLayout Grid.Column="1"
+                                 Spacing="2"
+                                 HorizontalOptions="Center">
+                <Border BackgroundColor="White"
+                        HeightRequest="40"
+                        WidthRequest="40">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <Image Source="incidencias.png"
+                           HeightRequest="24"
+                           WidthRequest="24"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                </Border>
+                <Label Text="Incidencias"
+                       FontSize="12"
+                       TextColor="White"/>
+            </VerticalStackLayout>
+            <!--Localización-->
+            <VerticalStackLayout Grid.Column="2"
+                                 Spacing="2"
+                                 HorizontalOptions="Center">
+                <Border BackgroundColor="White"
+                        HeightRequest="40"
+                        WidthRequest="40">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <Image Source="localizacion.png"
+                           HeightRequest="24"
+                           WidthRequest="24"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                </Border>
+                <Label Text="Localización"
+                       FontSize="12"
+                       TextColor="White"/>
+            </VerticalStackLayout>
+            <!--Usuarios-->
+            <VerticalStackLayout Grid.Column="3"
+                                 Spacing="2"
+                                 HorizontalOptions="Center">
+                <Border BackgroundColor="White"
+                        HeightRequest="40"
+                        WidthRequest="40">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <Image Source="usuario.png"
+                           HeightRequest="24"
+                           WidthRequest="24"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"/>
+                </Border>
+                <Label Text="Incidencias"
+                       FontSize="12"
+                       TextColor="White"/>
+            </VerticalStackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>

@@ -65,15 +65,55 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="Login.xaml.cs">
+	  <Compile Update="Autenticacion\Login.xaml.cs">
 	    <DependentUpon>Login.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Autenticacion\CambioContrasena.xaml.cs">
+	    <DependentUpon>CambioContrasena.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Administrador\AdministradorHome.xaml.cs">
+	    <DependentUpon>AdministradorHome.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Administrador\GestionIncidencias.xaml.cs">
+	    <DependentUpon>GestionIncidencias.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Login.xaml">
+	  <MauiXaml Update="Administrador\CrearUsuario.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Administrador\EditarIncidencia.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Administrador\EditarUsuario.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Administrador\GestionUsuarios.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Administrador\NuevaIncidencia.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Autenticacion\Login.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Autenticacion\CambioContrasena.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Administrador\AdministradorHome.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Administrador\GestionIncidencias.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Models\" />
+	  <Folder Include="ViewModels\" />
+	  <Folder Include="Services\" />
+	  <Folder Include="Usuario\" />
 	</ItemGroup>
 
 </Project>
