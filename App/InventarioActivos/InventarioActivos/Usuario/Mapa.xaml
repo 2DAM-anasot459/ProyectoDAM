@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="InventarioActivos.Usuario.Mapa"
+             Shell.NavBarIsVisible="False">
+    <Grid RowDefinitions="Auto,*,Auto"
+          BackgroundColor="White">
+        <!--Cabecera-->
+        <Grid Grid.Row="0"
+              BackgroundColor="#E53935"
+              HeightRequest="60"
+              Padding="16,10,16,10">
+            <Label Text="Mapa Interactivo"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Start"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   TextColor="White"/>
+        </Grid>
+        <!--Contenido-->
+        <Grid Grid.Row="1"
+              Padding="10">
+            <AbsoluteLayout>
+                <!--Mapa-->
+                <Border
+                    AbsoluteLayout.LayoutFlags="All"
+                    AbsoluteLayout.LayoutBounds="0,0,1,1"
+                    StrokeThickness="0"
+                    BackgroundColor="Transparent">
+                    <Image Source="mapa.png"
+                           Aspect="AspectFill"/>
+                </Border>
+                <!--Chincheta-->
+                <Image Source="chincheta.png"
+                       AbsoluteLayout.LayoutFlags="PositionProportional"
+                       AbsoluteLayout.LayoutBounds="0.5,0.6,40,60"/>
+                <!--Bocadillo con nombre y botones-->
+                <Border
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    AbsoluteLayout.LayoutBounds="0.5,0.35,280,190"
+                    BackgroundColor="#FFA000"
+                    Stroke="#F57C00"
+                    StrokeThickness="2"
+                    Padding="16">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="15"/>
+                    </Border.StrokeShape>
+                    <Grid RowDefinitions="Auto,Auto,Auto"
+                          RowSpacing="12">
+                        <Label Grid.Row="0"
+                               Text="Nombre Activo"                              
+                               FontSize="22"
+                               FontAttributes="Bold"
+                               TextColor="Black"
+                               HorizontalOptions="Center"/>
+                        <Button Grid.Row="1"
+                                Text="Ver Activo"
+                                FontAttributes="Bold"
+                                TextColor="White"
+                                CornerRadius="22"
+                                BackgroundColor="#1976D2"                               
+                                HeightRequest="44"/>
+                        <Button Grid.Row="2"
+                                Text="Crear Incidencia"
+                                FontAttributes="Bold"
+                                TextColor="White"
+                                CornerRadius="22"
+                                BackgroundColor="#D32F2F"                               
+                                HeightRequest="44"/>
+                    </Grid>
+                </Border>
+            </AbsoluteLayout>
+        </Grid>
+        <!--Barra de navegación-->
+        <Grid Grid.Row="2"
+              BackgroundColor="#E53935"                  
+              Padding="0,6"
+              ColumnDefinitions="*,*,*,*">
+            <!--Inicio-->
+            <VerticalStackLayout Grid.Column="0"
+                             Spacing="2"
+                             HorizontalOptions="Center">
+                <Border BackgroundColor="White"
+                    HeightRequest="40"
+                    WidthRequest="40">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <Image Source="home.png"
+                       HeightRequest="24"
+                       WidthRequest="24"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+                </Border>
+                <Label Text="Inicio"
+                   FontSize="12"
+                   TextColor="White"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+            </VerticalStackLayout>
+            <!--Activos-->
+            <VerticalStackLayout Grid.Column="1"
+                             Spacing="2"
+                             HorizontalOptions="Center">
+                <Border BackgroundColor="White"
+                    HeightRequest="40"
+                    WidthRequest="40">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <Image Source="incidencias.png"
+                       HeightRequest="24"
+                       WidthRequest="24"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+                </Border>
+                <Label Text="Activos"
+                   FontSize="12"
+                   TextColor="White"/>
+            </VerticalStackLayout>
+            <!--Mapa-->
+            <VerticalStackLayout Grid.Column="2"
+                             Spacing="2"
+                             HorizontalOptions="Center">
+                <Border BackgroundColor="White"
+                    HeightRequest="40"
+                    WidthRequest="40">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <Image Source="localizacion.png"
+                       HeightRequest="24"
+                       WidthRequest="24"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+                </Border>
+                <Label Text="Mapa"
+                   FontSize="12"
+                   TextColor="White"/>
+            </VerticalStackLayout>
+            <!--Incidencias-->
+            <VerticalStackLayout Grid.Column="3"
+                             Spacing="2"
+                             HorizontalOptions="Center">
+                <Border BackgroundColor="White"
+                    HeightRequest="40"
+                    WidthRequest="40">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Border.StrokeShape>
+                    <Image Source="hoja.png"
+                       HeightRequest="24"
+                       WidthRequest="24"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+                </Border>
+                <Label Text="Incidencias"
+                   FontSize="12"
+                   TextColor="White"/>
+            </VerticalStackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>

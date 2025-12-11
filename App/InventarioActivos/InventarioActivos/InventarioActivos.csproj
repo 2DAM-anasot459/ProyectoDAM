@@ -77,6 +77,9 @@
 	  <Compile Update="Administrador\GestionIncidencias.xaml.cs">
 	    <DependentUpon>GestionIncidencias.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="Usuario\PanelPrincipal.xaml.cs">
+	    <DependentUpon>PanelPrincipal.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -116,13 +119,33 @@
 	  <MauiXaml Update="Administrador\GestionIncidencias.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Usuario\BusquedaActivos.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Usuario\EditarIncidencia.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Usuario\FichaActivo.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Usuario\Mapa.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Usuario\NuevaIncidencia.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Usuario\PanelIncidencias.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Usuario\PanelPrincipal.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 	<ItemGroup>
 	  <Folder Include="Models\" />
 	  <Folder Include="ViewModels\" />
 	  <Folder Include="Services\" />
-	  <Folder Include="Usuario\" />
 	</ItemGroup>
 
 </Project>

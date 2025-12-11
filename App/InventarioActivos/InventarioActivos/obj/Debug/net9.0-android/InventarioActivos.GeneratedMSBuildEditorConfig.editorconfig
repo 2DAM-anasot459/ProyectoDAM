@@ -121,3 +121,45 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = InventarioActivos.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/repositorio/TFG/App/InventarioActivos/InventarioActivos/Usuario/BusquedaActivos.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InventarioActivos.Usuario.BusquedaActivos.xaml
+build_metadata.AdditionalFiles.TargetPath = Usuario\BusquedaActivos.xaml
+build_metadata.AdditionalFiles.RelativePath = Usuario\BusquedaActivos.xaml
+
+[C:/repositorio/TFG/App/InventarioActivos/InventarioActivos/Usuario/EditarIncidencia.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InventarioActivos.Usuario.EditarIncidencia.xaml
+build_metadata.AdditionalFiles.TargetPath = Usuario\EditarIncidencia.xaml
+build_metadata.AdditionalFiles.RelativePath = Usuario\EditarIncidencia.xaml
+
+[C:/repositorio/TFG/App/InventarioActivos/InventarioActivos/Usuario/FichaActivo.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InventarioActivos.Usuario.FichaActivo.xaml
+build_metadata.AdditionalFiles.TargetPath = Usuario\FichaActivo.xaml
+build_metadata.AdditionalFiles.RelativePath = Usuario\FichaActivo.xaml
+
+[C:/repositorio/TFG/App/InventarioActivos/InventarioActivos/Usuario/Mapa.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InventarioActivos.Usuario.Mapa.xaml
+build_metadata.AdditionalFiles.TargetPath = Usuario\Mapa.xaml
+build_metadata.AdditionalFiles.RelativePath = Usuario\Mapa.xaml
+
+[C:/repositorio/TFG/App/InventarioActivos/InventarioActivos/Usuario/NuevaIncidencia.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InventarioActivos.Usuario.NuevaIncidencia.xaml
+build_metadata.AdditionalFiles.TargetPath = Usuario\NuevaIncidencia.xaml
+build_metadata.AdditionalFiles.RelativePath = Usuario\NuevaIncidencia.xaml
+
+[C:/repositorio/TFG/App/InventarioActivos/InventarioActivos/Usuario/PanelIncidencias.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InventarioActivos.Usuario.PanelIncidencias.xaml
+build_metadata.AdditionalFiles.TargetPath = Usuario\PanelIncidencias.xaml
+build_metadata.AdditionalFiles.RelativePath = Usuario\PanelIncidencias.xaml
+
+[C:/repositorio/TFG/App/InventarioActivos/InventarioActivos/Usuario/PanelPrincipal.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InventarioActivos.Usuario.PanelPrincipal.xaml
+build_metadata.AdditionalFiles.TargetPath = Usuario\PanelPrincipal.xaml
+build_metadata.AdditionalFiles.RelativePath = Usuario\PanelPrincipal.xaml
