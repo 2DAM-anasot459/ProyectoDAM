@@ -45,7 +45,8 @@
                     <Border.StrokeShape>
                         <RoundRectangle CornerRadius="15" />
                     </Border.StrokeShape>
-                    <Entry Placeholder="Usuario"
+                    <Entry x:Name="CampoUsuario"
+                           Placeholder="Usuario"
                            TextColor="#1F2933"
                            PlaceholderColor="#9CA3AF"/>
                 </Border>
@@ -55,7 +56,8 @@
                     <Border.StrokeShape>
                         <RoundRectangle CornerRadius="15" />
                     </Border.StrokeShape>
-                    <Entry Placeholder="Contraseña"
+                    <Entry x:Name="CampoContrasena"
+                           Placeholder="Contraseña"
                            IsPassword="True"
                            TextColor="#1F2933"
                            PlaceholderColor="#9CA3AF"/>
@@ -65,7 +67,11 @@
                 <Label Text="¿Has olvidado la contraseña"
                           FontSize="14"
                           HorizontalOptions="Center"
-                          TextColor="#2563EB"/>
+                          TextColor="#2563EB">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnOlvidoContrasenaTapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
 
                 <!--Botón inicio sesión-->
                 <Button Text="Iniciar Sesión"
@@ -74,7 +80,8 @@
                         FontAttributes="Bold"
                         BackgroundColor="#1D4ED8"
                         TextColor="White"
-                        HorizontalOptions="Center"/>
+                        HorizontalOptions="Center"
+                        Clicked="OnIniciarSesionClick"/>
             </VerticalStackLayout>
         </Border>
     </Grid>

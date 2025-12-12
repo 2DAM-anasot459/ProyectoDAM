@@ -10,7 +10,7 @@
 
         protected override Window CreateWindow(IActivationState? activationState)
         {
-            return new Window(new Usuario.Mapa());
+            return new Window(new NavigationPage(new Autenticacion.Login()));
         }
     }
 }
