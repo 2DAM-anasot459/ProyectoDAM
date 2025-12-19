@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "u+p9z8PZ67w=",
+  "dgSpecHash": "7ZUtBaafCEE=",
   "success": true,
   "projectFilePath": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\InventarioActivos.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\usuario\\.nuget\\packages\\communitytoolkit.mvvm\\8.4.0\\communitytoolkit.mvvm.8.4.0.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\googlegson\\2.13.0.1\\googlegson.2.13.0.1.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.8\\microsoft.extensions.configuration.9.0.8.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.8\\microsoft.extensions.configuration.abstractions.9.0.8.nupkg.sha512",

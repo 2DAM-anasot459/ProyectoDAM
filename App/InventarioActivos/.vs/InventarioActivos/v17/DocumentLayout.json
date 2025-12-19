@@ -3,16 +3,60 @@
   "WorkspaceRootPath": "C:\\repositorio\\TFG\\App\\InventarioActivos\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|c:\\repositorio\\tfg\\app\\inventarioactivos\\inventarioactivos\\administrador\\administradorhome.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|solutionrelative:inventarioactivos\\administrador\\administradorhome.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|c:\\repositorio\\tfg\\app\\inventarioactivos\\inventarioactivos\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|solutionrelative:inventarioactivos\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|c:\\repositorio\\tfg\\app\\inventarioactivos\\inventarioactivos\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|solutionrelative:inventarioactivos\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|c:\\repositorio\\tfg\\app\\inventarioactivos\\inventarioactivos\\viewmodels\\administradorhomeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|solutionrelative:inventarioactivos\\viewmodels\\administradorhomeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|c:\\repositorio\\tfg\\app\\inventarioactivos\\inventarioactivos\\viewmodels\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|solutionrelative:inventarioactivos\\viewmodels\\baseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|c:\\repositorio\\tfg\\app\\inventarioactivos\\inventarioactivos\\views\\barrainferioradmin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|solutionrelative:inventarioactivos\\views\\barrainferioradmin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|c:\\repositorio\\tfg\\app\\inventarioactivos\\inventarioactivos\\views\\barrainferioradmin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|solutionrelative:inventarioactivos\\views\\barrainferioradmin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|c:\\repositorio\\tfg\\app\\inventarioactivos\\inventarioactivos\\autenticacion\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|solutionrelative:inventarioactivos\\autenticacion\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|c:\\repositorio\\tfg\\app\\inventarioactivos\\inventarioactivos\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|solutionrelative:inventarioactivos\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|c:\\repositorio\\tfg\\app\\inventarioactivos\\inventarioactivos\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|solutionrelative:inventarioactivos\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|c:\\repositorio\\tfg\\app\\inventarioactivos\\inventarioactivos\\autenticacion\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|solutionrelative:inventarioactivos\\autenticacion\\login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|c:\\repositorio\\tfg\\app\\inventarioactivos\\inventarioactivos\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|solutionrelative:inventarioactivos\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|c:\\repositorio\\tfg\\app\\inventarioactivos\\inventarioactivos\\administrador\\administradorhome.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|solutionrelative:inventarioactivos\\administrador\\administradorhome.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|c:\\repositorio\\tfg\\app\\inventarioactivos\\inventarioactivos\\services\\navigationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|solutionrelative:inventarioactivos\\services\\navigationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|c:\\repositorio\\tfg\\app\\inventarioactivos\\inventarioactivos\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88F4521F-1622-48E6-BCF5-109ACC7BCEF5}|InventarioActivos\\InventarioActivos.csproj|solutionrelative:inventarioactivos\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,32 +66,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 208,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Login.xaml.cs",
-              "DocumentMoniker": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\Autenticacion\\Login.xaml.cs",
-              "RelativeDocumentMoniker": "InventarioActivos\\Autenticacion\\Login.xaml.cs",
-              "ToolTip": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\Autenticacion\\Login.xaml.cs",
-              "RelativeToolTip": "InventarioActivos\\Autenticacion\\Login.xaml.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowB8AAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T11:09:53.409Z",
+              "DocumentIndex": 5,
+              "Title": "BarraInferiorAdmin.xaml",
+              "DocumentMoniker": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\Views\\BarraInferiorAdmin.xaml",
+              "RelativeDocumentMoniker": "InventarioActivos\\Views\\BarraInferiorAdmin.xaml",
+              "ToolTip": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\Views\\BarraInferiorAdmin.xaml",
+              "RelativeToolTip": "InventarioActivos\\Views\\BarraInferiorAdmin.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFQAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-19T19:20:20.348Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Login.xaml",
-              "DocumentMoniker": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\Autenticacion\\Login.xaml",
-              "RelativeDocumentMoniker": "InventarioActivos\\Autenticacion\\Login.xaml",
-              "ToolTip": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\Autenticacion\\Login.xaml",
-              "RelativeToolTip": "InventarioActivos\\Autenticacion\\Login.xaml",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAAFgAAAAOAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "AdministradorHome.xaml",
+              "DocumentMoniker": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\Administrador\\AdministradorHome.xaml",
+              "RelativeDocumentMoniker": "InventarioActivos\\Administrador\\AdministradorHome.xaml",
+              "ToolTip": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\Administrador\\AdministradorHome.xaml",
+              "RelativeToolTip": "InventarioActivos\\Administrador\\AdministradorHome.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-12T10:48:02.848Z",
+              "WhenOpened": "2025-12-16T13:32:07.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AdministradorHomeViewModel.cs",
+              "DocumentMoniker": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\ViewModels\\AdministradorHomeViewModel.cs",
+              "RelativeDocumentMoniker": "InventarioActivos\\ViewModels\\AdministradorHomeViewModel.cs",
+              "ToolTip": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\ViewModels\\AdministradorHomeViewModel.cs",
+              "RelativeToolTip": "InventarioActivos\\ViewModels\\AdministradorHomeViewModel.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA0wCwAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T13:26:14.809Z",
               "EditorCaption": ""
             },
             {
@@ -58,10 +115,138 @@
               "RelativeDocumentMoniker": "InventarioActivos\\App.xaml.cs",
               "ToolTip": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\App.xaml.cs",
               "RelativeToolTip": "InventarioActivos\\App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-01T11:48:31.433Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\AppShell.xaml",
+              "RelativeDocumentMoniker": "InventarioActivos\\AppShell.xaml",
+              "ToolTip": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\AppShell.xaml",
+              "RelativeToolTip": "InventarioActivos\\AppShell.xaml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-19T12:21:40.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BarraInferiorAdmin.xaml.cs",
+              "DocumentMoniker": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\Views\\BarraInferiorAdmin.xaml.cs",
+              "RelativeDocumentMoniker": "InventarioActivos\\Views\\BarraInferiorAdmin.xaml.cs",
+              "ToolTip": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\Views\\BarraInferiorAdmin.xaml.cs",
+              "RelativeToolTip": "InventarioActivos\\Views\\BarraInferiorAdmin.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T19:24:44.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BaseViewModel.cs",
+              "DocumentMoniker": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\ViewModels\\BaseViewModel.cs",
+              "RelativeDocumentMoniker": "InventarioActivos\\ViewModels\\BaseViewModel.cs",
+              "ToolTip": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\ViewModels\\BaseViewModel.cs",
+              "RelativeToolTip": "InventarioActivos\\ViewModels\\BaseViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T11:12:27.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Login.xaml.cs",
+              "DocumentMoniker": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\Autenticacion\\Login.xaml.cs",
+              "RelativeDocumentMoniker": "InventarioActivos\\Autenticacion\\Login.xaml.cs",
+              "ToolTip": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\Autenticacion\\Login.xaml.cs",
+              "RelativeToolTip": "InventarioActivos\\Autenticacion\\Login.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T11:43:51.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\App.xaml",
+              "RelativeDocumentMoniker": "InventarioActivos\\App.xaml",
+              "ToolTip": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\App.xaml",
+              "RelativeToolTip": "InventarioActivos\\App.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-19T11:13:03.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AppShell.xaml.cs",
+              "DocumentMoniker": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\AppShell.xaml.cs",
+              "RelativeDocumentMoniker": "InventarioActivos\\AppShell.xaml.cs",
+              "ToolTip": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\AppShell.xaml.cs",
+              "RelativeToolTip": "InventarioActivos\\AppShell.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-19T11:36:17.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Login.xaml",
+              "DocumentMoniker": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\Autenticacion\\Login.xaml",
+              "RelativeDocumentMoniker": "InventarioActivos\\Autenticacion\\Login.xaml",
+              "ToolTip": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\Autenticacion\\Login.xaml",
+              "RelativeToolTip": "InventarioActivos\\Autenticacion\\Login.xaml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAFMAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-16T13:33:08.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AdministradorHome.xaml.cs",
+              "DocumentMoniker": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\Administrador\\AdministradorHome.xaml.cs",
+              "RelativeDocumentMoniker": "InventarioActivos\\Administrador\\AdministradorHome.xaml.cs",
+              "ToolTip": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\Administrador\\AdministradorHome.xaml.cs",
+              "RelativeToolTip": "InventarioActivos\\Administrador\\AdministradorHome.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T13:32:11.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "NavigationService.cs",
+              "DocumentMoniker": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\Services\\NavigationService.cs",
+              "RelativeDocumentMoniker": "InventarioActivos\\Services\\NavigationService.cs",
+              "ToolTip": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\Services\\NavigationService.cs",
+              "RelativeToolTip": "InventarioActivos\\Services\\NavigationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T11:13:11.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "InventarioActivos\\Services\\AuthService.cs",
+              "ToolTip": "C:\\repositorio\\TFG\\App\\InventarioActivos\\InventarioActivos\\Services\\AuthService.cs",
+              "RelativeToolTip": "InventarioActivos\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T11:12:49.331Z"
             }
           ]
         }

@@ -10,7 +10,7 @@
          BackgroundColor="#E53935"
          HeightRequest="60"
          Padding="16,10,16,10">
-            <Label Text="Panel Principal"
+            <Label Text="{Binding Title}"
               VerticalOptions="Center"
               HorizontalOptions="Start"
               FontSize="20"

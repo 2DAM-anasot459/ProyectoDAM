@@ -81,9 +81,9 @@
                         BackgroundColor="#1D4ED8"
                         TextColor="White"
                         HorizontalOptions="Center"
-                        Clicked="OnIniciarSesionClick"/>
+                        Clicked="OnIniciarSesionClicked"/>
             </VerticalStackLayout>
         </Border>
-    </Grid>
+    </Grid>  
 
 </ContentPage>

@@ -4,6 +4,22 @@
         <name>InventarioActivos</name>
     </assembly>
     <members>
+        <member name="T:InventarioActivos.ViewModels.LoginViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="F:InventarioActivos.ViewModels.LoginViewModel.iniciarSesionCommand">
+            <summary>The backing field for <see cref="P:InventarioActivos.ViewModels.LoginViewModel.IniciarSesionCommand"/>.</summary>
+        </member>
+        <member name="P:InventarioActivos.ViewModels.LoginViewModel.IniciarSesionCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:InventarioActivos.ViewModels.LoginViewModel.IniciarSesionAsync"/>.</summary>
+        </member>
+        <member name="F:InventarioActivos.ViewModels.LoginViewModel.olvidoContrasenaCommand">
+            <summary>The backing field for <see cref="P:InventarioActivos.ViewModels.LoginViewModel.OlvidoContrasenaCommand"/>.</summary>
+        </member>
+        <member name="P:InventarioActivos.ViewModels.LoginViewModel.OlvidoContrasenaCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:InventarioActivos.ViewModels.LoginViewModel.OlvidoContrasenaAsync"/>.</summary>
+        </member>
         <member name="T:InventarioActivos.Resource">
             <summary>
             Android Resource Designer class.

@@ -3,12 +3,41 @@
     x:Class="InventarioActivos.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:InventarioActivos"
-    Title="InventarioActivos">
+    xmlns:auth="clr-namespace:InventarioActivos.Autenticacion"
+    xmlns:admin="clr-namespace:InventarioActivos.Administrador"
+    xmlns:tec="clr-namespace:InventarioActivos.Usuario"           
+    Shell.NavBarIsVisible="False">
 
+    <!--Ruta Login-->
     <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+            Route="login"
+            ContentTemplate="{DataTemplate auth:Login}"/>
 
+    <!--Rutas Administrador-->
+        <ShellContent                         
+                Route="admin/home"
+                ContentTemplate="{DataTemplate admin:AdministradorHome}"/>
+        <ShellContent
+                Route="admin/incidencias"
+                ContentTemplate="{DataTemplate admin:GestionIncidencias}"/>
+        <ShellContent
+                Route="admin/localizaciones"
+                ContentTemplate="{DataTemplate admin:GestionLocalizacion}"/>
+        <ShellContent
+                Route="admin/usuarios"
+                ContentTemplate="{DataTemplate admin:GestionUsuarios}"/>
+
+    <!--Rutas Técnico-->
+        <ShellContent
+                Route="tec/homeTec"
+                ContentTemplate="{DataTemplate tec:PanelPrincipal}"/>
+        <ShellContent
+                Route="tec/activos"
+                ContentTemplate="{DataTemplate tec:BusquedaActivos}"/>
+        <ShellContent
+                Route="tec/mapa"
+                ContentTemplate="{DataTemplate tec:Mapa}"/>
+        <ShellContent
+                Route="tec/incidenciasTec"
+                ContentTemplate="{DataTemplate tec:PanelIncidencias}"/>
 </Shell>
