@@ -1,26 +1,28 @@
 namespace InventarioActivos.Services;
 
-public class NavigationService : ContentPage
+public class NavigationService
 {
-	public void IrAHomeAdmin()
+	public async Task IrAHomeAdmin()
 	{
-		if (Application.Current != null)
-		{
-			if (Application.Current.Windows.Count > 0)
-			{
-				Application.Current.Windows[0].Page = new NavigationPage(new Administrador.AdministradorHome());
-            }
+		if(Shell.Current != null)
+        {
+            await Shell.Current.GoToAsync("//admin/home");
         }
     }
 
-    public void IrAHomeTecnico()
+    public async Task IrAHomeTecnico()
     {
-        if (Application.Current != null)
+        if (Shell.Current != null)
         {
-            if (Application.Current.Windows.Count > 0)
-            {
-                Application.Current.Windows[0].Page = new NavigationPage(new Usuario.PanelPrincipal());
-            }
+          await Shell.Current.GoToAsync("//tec/home");
+        }
+    }
+
+    public async Task IrALogin()
+    {
+        if (Shell.Current != null)
+        {
+            await Shell.Current.GoToAsync("//login");
         }
     }
 }

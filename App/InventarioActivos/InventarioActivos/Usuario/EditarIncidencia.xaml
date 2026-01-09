@@ -2,7 +2,9 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="InventarioActivos.Usuario.EditarIncidencia"
-             Shell.NavBarIsVisible="False">
+             xmlns:controls="clr-namespace:InventarioActivos.Views"
+             Shell.NavBarIsVisible="False"
+             Shell.TabBarIsVisible="False">
     <Grid RowDefinitions="Auto,*,Auto"
           BackgroundColor="White">
         <!--Cabecera-->
@@ -10,7 +12,7 @@
               BackgroundColor="#E53935"
               HeightRequest="60"
               Padding="16,10,16,10">
-            <Label Text="Panel de Incidencias"
+            <Label Text="{Binding Title}"
                    VerticalOptions="Center"
                    HorizontalOptions="Start"
                    FontSize="20"
@@ -49,6 +51,7 @@
                             </Border.StrokeShape>
                             <Entry Placeholder="Título Incidencia"
                                Margin="10,0"
+                               Text="{Binding Titulo}"
                                TextColor="Black"
                                PlaceholderColor="#A0A0A0"/>
                         </Border>
@@ -66,6 +69,7 @@
                             </Border.StrokeShape>
                             <Editor Placeholder="Descripción Incidencia"
                                 Margin="10,4"
+                                Text="{Binding Descripcion}"
                                 AutoSize="TextChanges"
                                 TextColor="Black"
                                 PlaceholderColor="#A0A0A0"/>
@@ -83,17 +87,25 @@
                                 <RoundRectangle CornerRadius="10"/>
                             </Border.StrokeShape>
                             <Grid ColumnDefinitions="*,Auto">
-                                <Label Text="Activo que tiene la incidencia"
-                                   Margin="10,0"
-                                   VerticalOptions="Center"
-                                   TextColor="#A0A0A0"/>
+                                <Picker x:Name="PickerActivos"
+                                        Title="Activo que tiene la incidencia"
+                                        ItemsSource="{Binding Activos}"
+                                        SelectedItem="{Binding ActivoSeleccionado}"
+                                        ItemDisplayBinding="{Binding NombreActivo}"
+                                        Margin="10,0"
+                                        VerticalOptions="Center"
+                                        TextColor="#A0A0A0"/>
                                 <Image Grid.Column="1"
                                    Source="flechanavegar.png"
                                    HeightRequest="16"
                                    WidthRequest="16"
                                    Margin="0,0,10,0"
                                    VerticalOptions="Center"
-                                   HorizontalOptions="End"/>
+                                   HorizontalOptions="End">
+                                    <Image.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="AbrirActivoTapped"/>
+                                    </Image.GestureRecognizers>
+                                </Image>
                             </Grid>
                         </Border>
                         <!--Fecha-->
@@ -112,7 +124,8 @@
                                 <DatePicker Margin="8,0"
                                         VerticalOptions="Center"
                                         TextColor="Black"
-                                        Format="dd/MM/yyyy"/>
+                                        Format="dd/MM/yyyy"
+                                        Date="{Binding FechaCreacion}"/>
                                 <Image Grid.Column="1"
                                    Source="calendario.png"
                                    HeightRequest="16"
@@ -135,120 +148,53 @@
                                 <RoundRectangle CornerRadius="10"/>
                             </Border.StrokeShape>
                             <Grid ColumnDefinitions="*,Auto">
-                                <Label Text="Estado Incidencia"
-                                   Margin="10,0"
-                                   VerticalOptions="Center"
-                                   TextColor="#A0A0A0"/>
+                                <Picker x:Name="PickerEstados"
+                                        Title="Estado Incidencia"
+                                        ItemsSource="{Binding Estados}"
+                                        SelectedItem="{Binding EstadoSeleccionado}"
+                                        ItemDisplayBinding="{Binding Tipo}"
+                                        Margin="10,0"
+                                        VerticalOptions="Center"
+                                        TextColor="#A0A0A0"/>
                                 <Image Grid.Column="1"
                                    Source="flechanavegar.png"
                                    HeightRequest="16"
                                    WidthRequest="16"
                                    Margin="0,0,10,0"
                                    VerticalOptions="Center"
-                                   HorizontalOptions="End"/>
+                                   HorizontalOptions="End">
+                                    <Image.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="AbrirEstadoTapped"/>
+                                    </Image.GestureRecognizers>
+                                </Image>
                             </Grid>
                         </Border>
                         <!--Botón Editar-->
                         <Button Text="Editar Incidencia"
-                            Margin="0,16,0,0"
-                            HeightRequest="50"
-                            CornerRadius="25"
-                            BackgroundColor="#1565C0"
-                            TextColor="White"
-                            FontAttributes="Bold"
-                            FontSize="16"/>
+                                Command="{Binding GuardarCommand}"
+                                Margin="0,16,0,0"
+                                HeightRequest="50"
+                                CornerRadius="25"
+                                BackgroundColor="#1565C0"
+                                TextColor="White"
+                                FontAttributes="Bold"
+                                FontSize="16"/>
+                        <Button Text="Volver"
+                                Command="{Binding VolverCommand}"
+                                Margin="0,16,0,0"
+                                HeightRequest="50"
+                                CornerRadius="25"
+                                BackgroundColor="#1565C0"
+                                TextColor="White"
+                                FontAttributes="Bold"
+                                FontSize="16"/>
                     </VerticalStackLayout>
                 </Border>
             </Grid>
         </ScrollView>
-
         <!--Barra de navegación-->
-        <Grid Grid.Row="2"
-              BackgroundColor="#E53935"                  
-              Padding="0,6"
-              ColumnDefinitions="*,*,*,*">
-            <!--Inicio-->
-            <VerticalStackLayout Grid.Column="0"
-                             Spacing="2"
-                             HorizontalOptions="Center">
-                <Border BackgroundColor="White"
-                    HeightRequest="40"
-                    WidthRequest="40">
-                    <Border.StrokeShape>
-                        <RoundRectangle CornerRadius="20"/>
-                    </Border.StrokeShape>
-                    <Image Source="home.png"
-                       HeightRequest="24"
-                       WidthRequest="24"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"/>
-                </Border>
-                <Label Text="Inicio"
-                   FontSize="12"
-                   TextColor="White"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center"/>
-            </VerticalStackLayout>
-            <!--Activos-->
-            <VerticalStackLayout Grid.Column="1"
-                             Spacing="2"
-                             HorizontalOptions="Center">
-                <Border BackgroundColor="White"
-                    HeightRequest="40"
-                    WidthRequest="40">
-                    <Border.StrokeShape>
-                        <RoundRectangle CornerRadius="20"/>
-                    </Border.StrokeShape>
-                    <Image Source="incidencias.png"
-                       HeightRequest="24"
-                       WidthRequest="24"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"/>
-                </Border>
-                <Label Text="Activos"
-                   FontSize="12"
-                   TextColor="White"/>
-            </VerticalStackLayout>
-            <!--Mapa-->
-            <VerticalStackLayout Grid.Column="2"
-                             Spacing="2"
-                             HorizontalOptions="Center">
-                <Border BackgroundColor="White"
-                    HeightRequest="40"
-                    WidthRequest="40">
-                    <Border.StrokeShape>
-                        <RoundRectangle CornerRadius="20"/>
-                    </Border.StrokeShape>
-                    <Image Source="localizacion.png"
-                       HeightRequest="24"
-                       WidthRequest="24"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"/>
-                </Border>
-                <Label Text="Mapa"
-                   FontSize="12"
-                   TextColor="White"/>
-            </VerticalStackLayout>
-            <!--Incidencias-->
-            <VerticalStackLayout Grid.Column="3"
-                             Spacing="2"
-                             HorizontalOptions="Center">
-                <Border BackgroundColor="White"
-                    HeightRequest="40"
-                    WidthRequest="40">
-                    <Border.StrokeShape>
-                        <RoundRectangle CornerRadius="20"/>
-                    </Border.StrokeShape>
-                    <Image Source="hoja.png"
-                       HeightRequest="24"
-                       WidthRequest="24"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"/>
-                </Border>
-                <Label Text="Incidencias"
-                   FontSize="12"
-                   TextColor="White"/>
-            </VerticalStackLayout>
-        </Grid>
+        <controls:BarraInferiorTec Grid.Row="2"
+                                   HeightRequest="90"
+                                   VerticalOptions="End"/>
     </Grid>
 </ContentPage>

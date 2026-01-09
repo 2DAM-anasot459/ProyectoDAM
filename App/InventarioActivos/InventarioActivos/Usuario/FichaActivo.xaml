@@ -2,7 +2,9 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="InventarioActivos.Usuario.FichaActivo"
-             Shell.NavBarIsVisible="False">
+             xmlns:controls="clr-namespace:InventarioActivos.Views"
+             Shell.NavBarIsVisible="False"
+             Shell.TabBarIsVisible="False">
     <Grid RowDefinitions="Auto,*,Auto"
           BackgroundColor="White">
         <!--Cabecera-->
@@ -10,7 +12,7 @@
               BackgroundColor="#E53935"
               HeightRequest="60"
               Padding="16,10,16,10">
-            <Label Text="Ficha Activo"
+            <Label Text="{Binding Title}"
                    VerticalOptions="Center"
                    HorizontalOptions="Start"
                    FontSize="20"
@@ -19,7 +21,8 @@
         </Grid>
         <!--Contenido-->
         <ScrollView Grid.Row="1">
-            <VerticalStackLayout Padding="16,16,16,10">
+            <VerticalStackLayout Padding="16,16,16,10"
+                                 Spacing="12">
                 <!--Tarjeta Activo-->
                 <Border BackgroundColor="#F5E6BF"
                         Stroke="#333333"
@@ -31,22 +34,28 @@
                         <RoundRectangle CornerRadius="20"/>
                     </Border.StrokeShape>
                     <VerticalStackLayout Spacing="10">
-                        <Label Text="Nombre del Activo"
+                        <Label Text="{Binding Item.NombreEquipo}"
                                FontSize="18"
                                FontAttributes="Bold"
                                HorizontalOptions="Center"
                                Margin="0,0,0,10"
                                TextColor="#333333"/>
                         <Label Text="Localización"
-                               FontSize="14"
+                               FontSize="16"
                                FontAttributes="Bold"
                                Margin="0,4,0,0"
                                TextColor="#555555"/>
+                        <Label Text="{Binding Item.NombreLocalizacion}"
+                               FontSize="14"
+                               TextColor="Black"/>
                         <Label Text="Usuario"
                                FontSize="16"
                                FontAttributes="Bold"
                                Margin="0,12,0,4"
                                TextColor="#555555"/>
+                        <Label Text="{Binding Item.UsuarioActual}"
+                               FontSize="14"
+                               TextColor="Black"/>
                         <Label Text="Especificaciones"
                                FontSize="16"
                                FontAttributes="Bold"
@@ -56,101 +65,219 @@
                                FontSize="14"
                                FontAttributes="Bold"
                                TextColor="#555555"/>
+                        <Grid ColumnDefinitions="Auto, *"
+                              RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto"
+                              ColumnSpacing="10"
+                              RowSpacing="6">
+                            <Label Text="CPU nombre" 
+                                   FontAttributes="Bold" 
+                                   TextColor="#616161"/>
+                            <Label Grid.Column="1" 
+                                   Text="{Binding Item.CpuNombre}" 
+                                   TextColor="#333333"/>
+
+                            <Label Grid.Row="1" 
+                                   Text="CPU núcleos" 
+                                   FontAttributes="Bold" 
+                                   TextColor="#616161"/>
+                            <Label Grid.Row="1" 
+                                   Grid.Column="1" 
+                                   Text="{Binding Item.CpuNumeroNucleos}" 
+                                   TextColor="#333333"/>
+
+                            <Label Grid.Row="2" 
+                                   Text="CPU fabricante" 
+                                   FontAttributes="Bold" 
+                                   TextColor="#616161"/>
+                            <Label Grid.Row="2" 
+                                   Grid.Column="1" 
+                                   Text="{Binding Item.CpuFabricante}" 
+                                   TextColor="#333333"/>
+
+                            <Label Grid.Row="3" 
+                                   Text="RAM capacidad total" 
+                                   FontAttributes="Bold" 
+                                   TextColor="#616161"/>
+                            <Label Grid.Row="3" 
+                                   Grid.Column="1" 
+                                   Text="{Binding Item.RamCapacidad}" 
+                                   TextColor="#333333"/>
+
+                            <Label Grid.Row="4" 
+                                   Text="RAM módulos" 
+                                   FontAttributes="Bold" 
+                                   TextColor="#616161"/>
+                            <Label Grid.Row="4" 
+                                   Grid.Column="1" 
+                                   Text="{Binding Item.RanurasRam}" 
+                                   TextColor="#333333"/>
+
+                            <Label Grid.Row="5" 
+                                   Text="RAM tipo" 
+                                   FontAttributes="Bold" 
+                                   TextColor="#616161"/>
+                            <Label Grid.Row="5" 
+                                   Grid.Column="1" 
+                                   Text="{Binding Item.TipoRam}" 
+                                   TextColor="#333333"/>
+
+                            <Label Grid.Row="6" 
+                                   Text="RAM ranuras" 
+                                   FontAttributes="Bold" 
+                                   TextColor="#616161"/>
+                            <Label Grid.Row="6" 
+                                   Grid.Column="1" 
+                                   Text="{Binding Item.RamNumeroRarunaras}" 
+                                   TextColor="#333333"/>
+
+                            <Label Grid.Row="7" 
+                                   Text="Placa modelo" 
+                                   FontAttributes="Bold" 
+                                   TextColor="#616161"/>
+                            <Label Grid.Row="7" 
+                                   Grid.Column="1" 
+                                   Text="{Binding Item.PlacaModelo}" 
+                                   TextColor="#333333"/>
+
+                            <Label Grid.Row="8" 
+                                   Text="Placa versión" 
+                                   FontAttributes="Bold"  
+                                   TextColor="#616161"/>
+                            <Label Grid.Row="8" 
+                                   Grid.Column="1" 
+                                   Text="{Binding Item.PlacaVersion}" 
+                                   TextColor="#333333"/>
+
+                            <Label Grid.Row="9" 
+                                   Text="Disco modelo" 
+                                   FontAttributes="Bold" 
+                                   TextColor="#616161"/>
+                            <Label Grid.Row="9" 
+                                   Grid.Column="1" 
+                                   Text="{Binding Item.ModeloDisco}" 
+                                   TextColor="#333333"/>
+
+                            <Label Grid.Row="10" 
+                                   Text="Disco capacidad" 
+                                   FontAttributes="Bold" 
+                                   TextColor="#616161"/>
+                            <Label Grid.Row="10" 
+                                   Grid.Column="1" 
+                                   Text="{Binding Item.CapacidadDisco}" 
+                                   TextColor="#333333"/>
+
+                            <Label Grid.Row="11" 
+                                   Text="Disco libre" 
+                                   FontAttributes="Bold" 
+                                   TextColor="#616161"/>
+                            <Label Grid.Row="11" Grid.Column="1" 
+                                   Text="{Binding Item.DiscoDuroCapacidadTotal}" 
+                                   TextColor="#333333"/>
+
+                            <Label Grid.Row="12" 
+                                   Text="Red tipo" 
+                                   FontAttributes="Bold" 
+                                   TextColor="#616161"/>
+                            <Label Grid.Row="12" 
+                                   Grid.Column="1" 
+                                   Text="{Binding Item.RedTipo}" 
+                                   TextColor="#333333"/>
+                        </Grid>
                         <Label Text="Software"
+                               FontSize="16"
+                               FontAttributes="Bold"
+                               Margin="0,10,0,0"
+                               TextColor="#555555"/>
+                        <Grid ColumnDefinitions="Auto, *"
+                              RowDefinitions="Auto,Auto,Auto,Auto"
+                              ColumnSpacing="10"
+                              RowSpacing="6">
+                            <Label Text="Sistema operativo" 
+                                   FontAttributes="Bold" 
+                                   TextColor="#616161"/>
+                            <Label Grid.Column="1" 
+                                   Text="{Binding Item.SistemaOperativo}" 
+                                   TextColor="#333333"/>
+
+                            <Label Grid.Row="1" 
+                                   Text="Versión SO" 
+                                   FontAttributes="Bold" 
+                                   TextColor="#616161"/>
+                            <Label Grid.Row="1" 
+                                   Grid.Column="1" 
+                                   Text="{Binding Item.VersionSO}" 
+                                   TextColor="#333333"/>
+
+                            <Label Grid.Row="2" 
+                                   Text="Último arranque" 
+                                   FontAttributes="Bold" 
+                                   TextColor="#616161"/>
+                            <Label Grid.Row="2" 
+                                   Grid.Column="1" 
+                                   Text="{Binding Item.SOUltimoArranque}" 
+                                   TextColor="#333333"/>
+
+                            <Label Grid.Row="3" 
+                                   Text="Defender" 
+                                   FontAttributes="Bold" 
+                                   TextColor="#616161"/>
+                            <Label Grid.Row="3" 
+                                   Grid.Column="1" 
+                                   Text="{Binding Item.EstadoDefender}" 
+                                   TextColor="#333333"/>
+                        </Grid>
+                        <Label Text="Programas Instalados"
                                FontSize="14"
                                FontAttributes="Bold"
+                               Margin="0,12,0,0"
                                TextColor="#555555"/>
+                        <Label Text="{Binding Item.TotalProgramas, StringFormat='Total: {0}'}"
+                               FontSize="14"
+                               TextColor="#333333"/>
+                        <CollectionView ItemsSource="{Binding Programas}"
+                                        HeightRequest="240">
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate>
+                                    <Border Stroke="#333333"
+                                            StrokeThickness="1"
+                                            BackgroundColor="White"
+                                            Padding="10"
+                                            Margin="0,4">
+                                        <Border.StrokeShape>
+                                            <RoundRectangle CornerRadius="12"/>
+                                        </Border.StrokeShape>
+                                        <Label Text="{Binding .}"
+                                               FontSize="13"
+                                               TextColor="#333333"/>
+                                    </Border>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
                     </VerticalStackLayout>
                 </Border>
+                <Button Text="Crear Incidencia"
+                        Margin="0,16,0,0"
+                        HeightRequest="50"
+                        CornerRadius="25"
+                        BackgroundColor="#1565C0"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        FontSize="16"
+                        Command="{Binding CrearIncidenciaCommand}"/>
+                <Button Text="Volver"
+                        Margin="0,16,0,0"
+                        HeightRequest="50"
+                        CornerRadius="25"
+                        BackgroundColor="#1565C0"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        FontSize="16"
+                        Command="{Binding VolverCommand}"/>
             </VerticalStackLayout>
         </ScrollView>
         <!--Barra de navegación-->
-        <Grid Grid.Row="2"
-              BackgroundColor="#E53935"                  
-              Padding="0,6"
-              ColumnDefinitions="*,*,*,*">
-            <!--Inicio-->
-            <VerticalStackLayout Grid.Column="0"
-                             Spacing="2"
-                             HorizontalOptions="Center">
-                <Border BackgroundColor="White"
-                    HeightRequest="40"
-                    WidthRequest="40">
-                    <Border.StrokeShape>
-                        <RoundRectangle CornerRadius="20"/>
-                    </Border.StrokeShape>
-                    <Image Source="home.png"
-                       HeightRequest="24"
-                       WidthRequest="24"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"/>
-                </Border>
-                <Label Text="Inicio"
-                   FontSize="12"
-                   TextColor="White"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center"/>
-            </VerticalStackLayout>
-            <!--Activos-->
-            <VerticalStackLayout Grid.Column="1"
-                             Spacing="2"
-                             HorizontalOptions="Center">
-                <Border BackgroundColor="White"
-                    HeightRequest="40"
-                    WidthRequest="40">
-                    <Border.StrokeShape>
-                        <RoundRectangle CornerRadius="20"/>
-                    </Border.StrokeShape>
-                    <Image Source="incidencias.png"
-                       HeightRequest="24"
-                       WidthRequest="24"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"/>
-                </Border>
-                <Label Text="Activos"
-                   FontSize="12"
-                   TextColor="White"/>
-            </VerticalStackLayout>
-            <!--Mapa-->
-            <VerticalStackLayout Grid.Column="2"
-                             Spacing="2"
-                             HorizontalOptions="Center">
-                <Border BackgroundColor="White"
-                    HeightRequest="40"
-                    WidthRequest="40">
-                    <Border.StrokeShape>
-                        <RoundRectangle CornerRadius="20"/>
-                    </Border.StrokeShape>
-                    <Image Source="localizacion.png"
-                       HeightRequest="24"
-                       WidthRequest="24"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"/>
-                </Border>
-                <Label Text="Mapa"
-                   FontSize="12"
-                   TextColor="White"/>
-            </VerticalStackLayout>
-            <!--Incidencias-->
-            <VerticalStackLayout Grid.Column="3"
-                             Spacing="2"
-                             HorizontalOptions="Center">
-                <Border BackgroundColor="White"
-                    HeightRequest="40"
-                    WidthRequest="40">
-                    <Border.StrokeShape>
-                        <RoundRectangle CornerRadius="20"/>
-                    </Border.StrokeShape>
-                    <Image Source="hoja.png"
-                       HeightRequest="24"
-                       WidthRequest="24"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"/>
-                </Border>
-                <Label Text="Incidencias"
-                   FontSize="12"
-                   TextColor="White"/>
-            </VerticalStackLayout>
-        </Grid>
+        <controls:BarraInferiorTec Grid.Row="2"
+                                   HeightRequest="90"
+                                   VerticalOptions="End"/>
     </Grid>
 </ContentPage>

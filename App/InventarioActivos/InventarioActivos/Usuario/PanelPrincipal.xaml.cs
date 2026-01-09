@@ -1,10 +1,13 @@
+using InventarioActivos.ViewModels.Usuario;
 namespace InventarioActivos.Usuario;
 
 public partial class PanelPrincipal : ContentPage
 {
-	public PanelPrincipal()
+	private readonly PanelPrincipalViewModel vm;
+	public PanelPrincipal(PanelPrincipalViewModel viewModel)
 	{
 		InitializeComponent();
-		BindingContext = new ViewModels.PanelPrincipalViewModel();
+		vm = viewModel;
+		BindingContext = viewModel;
     }
 }

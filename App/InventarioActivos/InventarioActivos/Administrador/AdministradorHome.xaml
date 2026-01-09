@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:InventarioActivos.ViewModels.Administrador"
+             xmlns:controls="clr-namespace:InventarioActivos.Views"
              x:Class="InventarioActivos.Administrador.AdministradorHome"
              Shell.NavBarIsVisible="False"
-             Shell.TabBarIsVisible="False"
-             xmlns:controls="clr-namespace:InventarioActivos.Views">
+             Shell.TabBarIsVisible="False">
 
     <Grid RowDefinitions="Auto,*,Auto"
               BackgroundColor="White">
@@ -28,7 +29,7 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-                <VerticalStackLayout Grid.Row="1"
+            <VerticalStackLayout Grid.Row="1"
                                  Spacing="30"
                                  Padding="30,0"
                                  VerticalOptions="Center"
@@ -36,7 +37,7 @@
                 <!--Botón Gestión de Incidencias-->
                 <Button Text="Gestión de Incidencias"
                         Command="{Binding IrIncidenciasCommand}"
-                        Background="#FB8C00"
+                        BackgroundColor="#FB8C00"
                         HeightRequest="60"
                         WidthRequest="260"
                         CornerRadius="16"
@@ -48,36 +49,36 @@
                 </Button>
 
                 <!--Botón Gestiçon de Localizaciones-->
-                <Border Background="#43A047"
+                <Button Text="Gestión de Localizaciones"
+                        Command="{Binding IrLocalizacionesCommand}"
+                        BackgroundColor="#43A047"
                         HeightRequest="60"
-                        WidthRequest="260">
-                    <Border.StrokeShape>
-                        <RoundRectangle CornerRadius="16"/>
-                    </Border.StrokeShape>
-                    <Label Text="Gestión de Localizaciones"
-                           VerticalOptions="Center"
-                           HorizontalOptions="Center"
-                           FontSize="16"
-                           FontAttributes="Bold"
-                           TextColor="White"/>
-                </Border>
+                        WidthRequest="260"
+                        CornerRadius="16"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        FontSize="16"
+                        FontAttributes="Bold"
+                        TextColor="White">
+                </Button>
 
                 <!--Botón Gestión de Usuarios-->
-                <Border Background="#1E88E5"
+                <Button Text="Gestión de Usuarios"
+                        Command="{Binding IrUsuariosCommand}"
+                        BackgroundColor="#1E88E5"
                         HeightRequest="60"
-                        WidthRequest="260">
-                    <Border.StrokeShape>
-                        <RoundRectangle CornerRadius="16"/>
-                    </Border.StrokeShape>
-                    <Label Text="Gestión de Usuarios"
-                           VerticalOptions="Center"
-                           HorizontalOptions="Center"
-                           FontSize="16"
-                           FontAttributes="Bold"
-                           TextColor="White"/>
-                </Border>
+                        WidthRequest="260"
+                        CornerRadius="16"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        FontSize="16"
+                        FontAttributes="Bold"
+                        TextColor="White">
+                </Button>
             </VerticalStackLayout>
         </Grid>
-        <controls:BarraInferiorAdmin Grid.Row="2"/>
+        <controls:BarraInferiorAdmin Grid.Row="2"
+                                     HeightRequest="90"
+                                     VerticalOptions="End"/>
     </Grid>
 </ContentPage>

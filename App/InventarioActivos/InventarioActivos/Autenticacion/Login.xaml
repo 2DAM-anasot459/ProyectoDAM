@@ -33,7 +33,7 @@
                        WidthRequest="70"
                        HorizontalOptions="Center" />
                 <!--Inicio Sesión-->
-                <Label Text="Inicio Sesión"
+                <Label Text="{Binding Title}"
                        FontSize="28"
                        FontAttributes="Bold"
                        HorizontalOptions="Center"
@@ -47,6 +47,7 @@
                     </Border.StrokeShape>
                     <Entry x:Name="CampoUsuario"
                            Placeholder="Usuario"
+                           Text="{Binding Usuario}"
                            TextColor="#1F2933"
                            PlaceholderColor="#9CA3AF"/>
                 </Border>
@@ -58,30 +59,31 @@
                     </Border.StrokeShape>
                     <Entry x:Name="CampoContrasena"
                            Placeholder="Contraseña"
+                           Text="{Binding Contrasena}"
                            IsPassword="True"
                            TextColor="#1F2933"
                            PlaceholderColor="#9CA3AF"/>
                 </Border>
 
                 <!--Olvido de contraseña-->
-                <Label Text="¿Has olvidado la contraseña"
+                <Label Text="¿Has olvidado la contraseña?"
                           FontSize="14"
                           HorizontalOptions="Center"
                           TextColor="#2563EB">
                     <Label.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="OnOlvidoContrasenaTapped"/>
+                        <TapGestureRecognizer Command="{Binding OlvidoContrasenaCommand}"/>
                     </Label.GestureRecognizers>
                 </Label>
 
                 <!--Botón inicio sesión-->
                 <Button Text="Iniciar Sesión"
+                        Command="{Binding IniciarSesionCommand}"
                         CornerRadius="20"
                         HeightRequest="48"
                         FontAttributes="Bold"
                         BackgroundColor="#1D4ED8"
                         TextColor="White"
-                        HorizontalOptions="Center"
-                        Clicked="OnIniciarSesionClicked"/>
+                        HorizontalOptions="Center"/>
             </VerticalStackLayout>
         </Border>
     </Grid>  

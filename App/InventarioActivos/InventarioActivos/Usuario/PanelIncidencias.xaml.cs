@@ -1,9 +1,21 @@
+using InventarioActivos.ViewModels.Usuario;
+
 namespace InventarioActivos.Usuario;
 
 public partial class PanelIncidencias : ContentPage
 {
-	public PanelIncidencias()
+    private readonly PanelIncidenciasViewModel vm;
+    public PanelIncidencias(PanelIncidenciasViewModel viewModel)
 	{
-		InitializeComponent();
-	}
+		InitializeComponent();       
+        vm = viewModel;
+        BindingContext = vm;
+    }
+
+    protected override async void OnAppearing()
+    {
+        base.OnAppearing();
+        if (vm != null)
+            await vm.CargarIncidencias();
+    }
 }

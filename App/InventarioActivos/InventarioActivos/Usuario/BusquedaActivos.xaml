@@ -2,15 +2,17 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="InventarioActivos.Usuario.BusquedaActivos"
-             Shell.NavBarIsVisible="False">
-    <Grid RowDefinitions="Auto,*,Auto"
+             xmlns:controls="clr-namespace:InventarioActivos.Views"
+             Shell.NavBarIsVisible="False"
+             Shell.TabBarIsVisible="False">
+    <Grid RowDefinitions="Auto,Auto,*,Auto"
      BackgroundColor="White">
         <!--Cabecera-->
         <Grid Grid.Row="0"
          BackgroundColor="#E53935"
          HeightRequest="60"
          Padding="16,10,16,10">
-            <Label Text="Panel Principal"
+            <Label Text="{Binding Title}"
               VerticalOptions="Center"
               HorizontalOptions="Start"
               FontSize="20"
@@ -18,221 +20,182 @@
               TextColor="White"/>
         </Grid>
         <!--Contenido-->
-        <ScrollView Grid.Row="1">
-            <VerticalStackLayout Padding="16,10,16,10"
-                                 Spacing="16">
-                <!--Etiqueta Acticos-->
-                <Label Text="Activos"
+        <VerticalStackLayout Grid.Row="1"
+                                 Padding="16,10,16,10"
+                                 Spacing="12">
+            <!--Etiqueta Acticos-->
+            <Label Text="Activos"
                        FontSize="14"
                        TextColor="#555"/>
-                <!--Buscador-->
-                <Grid HeightRequest="48">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="56"/>
-                    </Grid.ColumnDefinitions>
-                    <Border Grid.ColumnSpan="2"
+            <!--Buscador-->
+            <Grid HeightRequest="48">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="56"/>
+                </Grid.ColumnDefinitions>
+                <Border Grid.ColumnSpan="2"
                             BackgroundColor="White"
                             Stroke="#CCCCCC"
                             StrokeThickness="1"
                             StrokeShape="RoundRectangle 12"
                             Padding="12,0">
-                        <Entry x:Name="buscador"
-                               Placeholder="Buscar activo"
+                    <Entry Placeholder="Buscar activo"
+                               Text="{Binding FiltroActivo}"
+                               TextColor="Black"
                                FontSize="14"
                                VerticalOptions="Center"
-                               BackgroundColor="Transparent"/>
-                    </Border>
-                    <Grid Grid.Column="1"
+                               PlaceholderColor="#A0A0A0"/>
+                </Border>
+                <Grid Grid.Column="1"
                           Margin="0"
                           Padding="0"
                           HorizontalOptions="End"
                           VerticalOptions="Center">
-                        <Border BackgroundColor="Transparent"
+                    <Border BackgroundColor="Transparent"
                                 StrokeThickness="0"
                                 HorizontalOptions="Center"
                                 VerticalOptions="Center">
-                            <Image Source="lupa.png"
+                        <Image Source="lupa.png"
                                    HeightRequest="24"
                                    WidthRequest="24"
                                    HorizontalOptions="Center"
                                    VerticalOptions="Center"/>
-                        </Border>
-                    </Grid>
+                    </Border>
                 </Grid>
-                <VerticalStackLayout Spacing="12">
-                    <!--Tarjeta de ejemplo 1 Activo-->
-                    <Border BackgroundColor="#D6E6F7"
-                                Stroke="#B0C4DE"
-                                StrokeThickness="1"
-                                Padding="16"
-                                Margin="0,4"
-                                HorizontalOptions="Fill">
-                        <Border.StrokeShape>
-                            <RoundRectangle CornerRadius="12"/>
-                        </Border.StrokeShape>
-                        <Grid ColumnDefinitions="*,*"
-                                  RowDefinitions="Auto,Auto,Auto">
-                            <VerticalStackLayout Grid.Column="0"
-                                                     Spacing="4">
-                                <Label Text="Nombre Activo"
-                                           FontSize="16"
-                                           FontAttributes="Bold"
-                                           TextColor="Black"/>
-                                <Label Text="Localizacion"
-                                           FontSize="14"
-                                           TextColor="Black"/>
-                                <Label Text="Usuario"
-                                           FontSize="14"
-                                           TextColor="Black"/>
-                            </VerticalStackLayout>
-                            <VerticalStackLayout Grid.Column="1"
-                                                     Spacing="4"
-                                                     HorizontalOptions="End"
-                                                     VerticalOptions="Center">
-                                <Label Text="Especificaciones"
-                                           FontSize="14"
-                                           TextColor="Black"/>
-                                <Label Text="Hardware"
-                                           FontSize="14"
-                                           TextColor="Black"/>
-                                <Label Text="Software"
-                                           FontSize="14"
-                                           TextColor="Black"/>
-                            </VerticalStackLayout>
-                        </Grid>
-                    </Border>
-                    <!--Tarjeta de Ejemplo 2 Activo-->
-                    <Border BackgroundColor="#D6E6F7"
-                                Stroke="#B0C4DE"
-                                StrokeThickness="1"
-                                Padding="16"
-                                Margin="0,4"
-                                HorizontalOptions="Fill">
-                        <Border.StrokeShape>
-                            <RoundRectangle CornerRadius="12"/>
-                        </Border.StrokeShape>
-                        <Grid ColumnDefinitions="*,*"
-                                  RowDefinitions="Auto,Auto,Auto">
-                            <VerticalStackLayout Grid.Column="0"
-                                                     Spacing="4">
-                                <Label Text="Nombre Activo"
-                                           FontSize="16"
-                                           FontAttributes="Bold"
-                                           TextColor="Black"/>
-                                <Label Text="Localizacion"
-                                           FontSize="14"
-                                           TextColor="Black"/>
-                                <Label Text="Usuario"
-                                           FontSize="14"
-                                           TextColor="Black"/>
-                            </VerticalStackLayout>
-                            <VerticalStackLayout Grid.Column="1"
-                                                     Spacing="4"
-                                                     HorizontalOptions="End"
-                                                     VerticalOptions="Center">
-                                <Label Text="Especificaciones"
-                                           FontSize="14"
-                                           TextColor="Black"/>
-                                <Label Text="Hardware"
-                                           FontSize="14"
-                                           TextColor="Black"/>
-                                <Label Text="Software"
-                                           FontSize="14"
-                                           TextColor="Black"/>
-                            </VerticalStackLayout>
-                        </Grid>
-                    </Border>
-                </VerticalStackLayout>
-            </VerticalStackLayout>
-        </ScrollView>
-        <!--Barra de navegación-->
-        <Grid Grid.Row="2"
-              BackgroundColor="#E53935"                  
-              Padding="0,6"
-              ColumnDefinitions="*,*,*,*">
-            <!--Inicio-->
-            <VerticalStackLayout Grid.Column="0"
-                             Spacing="2"
-                             HorizontalOptions="Center">
-                <Border BackgroundColor="White"
-                    HeightRequest="40"
-                    WidthRequest="40">
-                    <Border.StrokeShape>
-                        <RoundRectangle CornerRadius="20"/>
-                    </Border.StrokeShape>
-                    <Image Source="home.png"
-                       HeightRequest="24"
-                       WidthRequest="24"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"/>
-                </Border>
-                <Label Text="Inicio"
-                   FontSize="12"
-                   TextColor="White"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center"/>
-            </VerticalStackLayout>
-            <!--Activos-->
-            <VerticalStackLayout Grid.Column="1"
-                             Spacing="2"
-                             HorizontalOptions="Center">
-                <Border BackgroundColor="White"
-                    HeightRequest="40"
-                    WidthRequest="40">
-                    <Border.StrokeShape>
-                        <RoundRectangle CornerRadius="20"/>
-                    </Border.StrokeShape>
-                    <Image Source="incidencias.png"
-                       HeightRequest="24"
-                       WidthRequest="24"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"/>
-                </Border>
-                <Label Text="Activos"
-                   FontSize="12"
-                   TextColor="White"/>
-            </VerticalStackLayout>
-            <!--Mapa-->
-            <VerticalStackLayout Grid.Column="2"
-                             Spacing="2"
-                             HorizontalOptions="Center">
-                <Border BackgroundColor="White"
-                    HeightRequest="40"
-                    WidthRequest="40">
-                    <Border.StrokeShape>
-                        <RoundRectangle CornerRadius="20"/>
-                    </Border.StrokeShape>
-                    <Image Source="localizacion.png"
-                       HeightRequest="24"
-                       WidthRequest="24"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"/>
-                </Border>
-                <Label Text="Mapa"
-                   FontSize="12"
-                   TextColor="White"/>
-            </VerticalStackLayout>
-            <!--Incidencias-->
-            <VerticalStackLayout Grid.Column="3"
-                             Spacing="2"
-                             HorizontalOptions="Center">
-                <Border BackgroundColor="White"
-                    HeightRequest="40"
-                    WidthRequest="40">
-                    <Border.StrokeShape>
-                        <RoundRectangle CornerRadius="20"/>
-                    </Border.StrokeShape>
-                    <Image Source="hoja.png"
-                       HeightRequest="24"
-                       WidthRequest="24"
-                       HorizontalOptions="Center"
-                       VerticalOptions="Center"/>
-                </Border>
-                <Label Text="Incidencias"
-                   FontSize="12"
-                   TextColor="White"/>
-            </VerticalStackLayout>
-        </Grid>
+            </Grid>
+        </VerticalStackLayout>
+        <!--Lista de Activos-->
+            <CollectionView Grid.Row="2"
+                                ItemsSource="{Binding Activos}"
+                                SelectionMode="None"
+                                Margin="16,0,16,0">
+                <CollectionView.EmptyView>
+                    <Label Text="No hay activos"
+                               TextColor="#616161"
+                               HorizontalOptions="Center"
+                               Margin="0,20,0,0"/>
+                </CollectionView.EmptyView>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Border BackgroundColor="#D6E6F7"
+                                    Stroke="#B0C4DE"
+                                    StrokeThickness="1"
+                                    Padding="16"
+                                    Margin="0,4"
+                                    HorizontalOptions="Fill">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="12"/>
+                            </Border.StrokeShape>
+                            <Grid ColumnDefinitions="*,*">
+                                <!--Columna Izquierda-->
+                                <VerticalStackLayout Grid.Column="0"
+                                                         Spacing="4">
+                                    <Label Text="{Binding NombreEquipo}"
+                                               FontSize="16"
+                                               FontAttributes="Bold"
+                                               TextColor="Black"/>
+                                    <Label Text="Localizacion: "
+                                               FontSize="12"
+                                               TextColor="#616161"/>
+                                    <Label Text="{Binding NombreLocalizacion}"
+                                               FontSize="14"
+                                               TextColor="Black"/>
+                                    <Label Text="Usuario: "
+                                               FontSize="12"
+                                               TextColor="#616161"/>
+                                    <Label Text="{Binding UsuarioActual}"
+                                               FontSize="14"
+                                               TextColor="Black"/>
+                                </VerticalStackLayout>
+                                <!--Columna Derecha-->
+                                <VerticalStackLayout Grid.Column="1"
+                                                         Spacing="4"
+                                                         HorizontalOptions="End"
+                                                         VerticalOptions="Start">
+                                    <Label Text="Especificaciones"
+                                               FontSize="14"
+                                               FontAttributes="Bold"
+                                               TextColor="Black"
+                                               HorizontalTextAlignment="End"/>
+                                    <!--Hardware-->
+                                    <Label Text="Hardware"
+                                               FontSize="13"
+                                               FontAttributes="Bold"
+                                               TextColor="Black"
+                                               HorizontalTextAlignment="End"/>
+                                    <Label Text="Modelo Cpu: "
+                                               FontSize="12"
+                                               TextColor="#616161"/>
+                                    <Label Text="{Binding CpuNombre}"
+                                               FontSize="12"
+                                               TextColor="Black"
+                                               HorizontalTextAlignment="End"/>
+                                    <Label Text="Número de ranuras Ram ocupadas: "
+                                               FontSize="12"
+                                               TextColor="#616161"/>
+                                    <Label Text="{Binding RanurasRam}"
+                                               FontSize="12"
+                                               TextColor="Black"
+                                               HorizontalTextAlignment="End"/>
+                                    <Label Text="Tipo de Ram: "
+                                               FontSize="12"
+                                               TextColor="#616161"/>
+                                    <Label Text="{Binding TipoRam}"
+                                               FontSize="12"
+                                               TextColor="Black"
+                                               HorizontalTextAlignment="End"/>
+                                    <Label Text="Modelo Disco Duro: "
+                                               FontSize="12"
+                                               TextColor="#616161"/>
+                                    <Label Text="{Binding ModeloDisco}"
+                                               FontSize="12"
+                                               TextColor="Black"
+                                               HorizontalTextAlignment="End"/>
+                                    <Label Text="Capacidad restante: "
+                                               FontSize="12"
+                                               TextColor="#616161"/>
+                                    <Label Text="{Binding CapacidadDisco}"
+                                               FontSize="12"
+                                               TextColor="Black"
+                                               HorizontalTextAlignment="End"/>
+                                    <!--Software-->
+                                    <Label Text="Software"
+                                               FontSize="13"
+                                               FontAttributes="Bold"
+                                               TextColor="Black"
+                                               Margin="0,6,0,0"
+                                               HorizontalTextAlignment="End"/>
+                                    <Label Text="Sistema Operativo: "
+                                               FontSize="12"
+                                               TextColor="#616161"/>
+                                    <Label Text="{Binding SistemaOperativo}"
+                                               FontSize="12"
+                                               TextColor="Black"
+                                               HorizontalTextAlignment="End"/>
+                                    <Label Text="Versión del sistema operativo: "
+                                               FontSize="12"
+                                               TextColor="#616161"/>
+                                    <Label Text="{Binding VersionSO}"
+                                               FontSize="12"
+                                               TextColor="Black"
+                                               HorizontalTextAlignment="End"/>
+                                    <Label Text="Estado Windows Defender: "
+                                               FontSize="12"
+                                               TextColor="#616161"/>
+                                    <Label Text="{Binding EstadoDefender}"
+                                               FontSize="12"
+                                               TextColor="Black"
+                                               HorizontalTextAlignment="End"/>
+                                </VerticalStackLayout>
+                            </Grid>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <!--Barra de navegación-->
+        <controls:BarraInferiorTec Grid.Row="3"
+                                   HeightRequest="90"
+                                   VerticalOptions="End"/>
     </Grid>
 </ContentPage>

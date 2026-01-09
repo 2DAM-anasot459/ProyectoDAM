@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "C:\\repositorio\\TFG\\Agente\\Agente\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{345FF92F-AE84-48B2-822C-5AC01A0544FC}|Agente\\Agente.csproj|c:\\repositorio\\tfg\\agente\\agente\\agente\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{345FF92F-AE84-48B2-822C-5AC01A0544FC}|Agente\\Agente.csproj|solutionrelative:agente\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{345FF92F-AE84-48B2-822C-5AC01A0544FC}|Agente\\Agente.csproj|c:\\repositorio\\tfg\\agente\\agente\\agente\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{345FF92F-AE84-48B2-822C-5AC01A0544FC}|Agente\\Agente.csproj|solutionrelative:agente\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{345FF92F-AE84-48B2-822C-5AC01A0544FC}|Agente\\Agente.csproj|c:\\repositorio\\tfg\\agente\\agente\\agente\\formulario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{345FF92F-AE84-48B2-822C-5AC01A0544FC}|Agente\\Agente.csproj|solutionrelative:agente\\formulario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,8 +11,16 @@
       "RelativeMoniker": "D:0:0:{345FF92F-AE84-48B2-822C-5AC01A0544FC}|Agente\\Agente.csproj|solutionrelative:agente\\recolector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{345FF92F-AE84-48B2-822C-5AC01A0544FC}|Agente\\Agente.csproj|c:\\repositorio\\tfg\\agente\\agente\\agente\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{345FF92F-AE84-48B2-822C-5AC01A0544FC}|Agente\\Agente.csproj|solutionrelative:agente\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{345FF92F-AE84-48B2-822C-5AC01A0544FC}|Agente\\Agente.csproj|c:\\repositorio\\tfg\\agente\\agente\\agente\\datos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{345FF92F-AE84-48B2-822C-5AC01A0544FC}|Agente\\Agente.csproj|solutionrelative:agente\\datos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{345FF92F-AE84-48B2-822C-5AC01A0544FC}|Agente\\Agente.csproj|c:\\repositorio\\tfg\\agente\\agente\\agente\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{345FF92F-AE84-48B2-822C-5AC01A0544FC}|Agente\\Agente.csproj|solutionrelative:agente\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,49 +30,48 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Conexion.cs",
               "DocumentMoniker": "C:\\repositorio\\TFG\\Agente\\Agente\\Agente\\Conexion.cs",
               "RelativeDocumentMoniker": "Agente\\Conexion.cs",
               "ToolTip": "C:\\repositorio\\TFG\\Agente\\Agente\\Agente\\Conexion.cs",
               "RelativeToolTip": "Agente\\Conexion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T13:26:51.649Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-26T13:26:51.649Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Formulario.cs",
               "DocumentMoniker": "C:\\repositorio\\TFG\\Agente\\Agente\\Agente\\Formulario.cs",
               "RelativeDocumentMoniker": "Agente\\Formulario.cs",
               "ToolTip": "C:\\repositorio\\TFG\\Agente\\Agente\\Agente\\Formulario.cs",
               "RelativeToolTip": "Agente\\Formulario.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-27T10:30:26.884Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Recolector.cs",
               "DocumentMoniker": "C:\\repositorio\\TFG\\Agente\\Agente\\Agente\\Recolector.cs",
               "RelativeDocumentMoniker": "Agente\\Recolector.cs",
               "ToolTip": "C:\\repositorio\\TFG\\Agente\\Agente\\Agente\\Recolector.cs",
               "RelativeToolTip": "Agente\\Recolector.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-26T13:26:56.891Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\repositorio\\TFG\\Agente\\Agente\\Agente\\Program.cs",
               "RelativeDocumentMoniker": "Agente\\Program.cs",
@@ -80,12 +79,11 @@
               "RelativeToolTip": "Agente\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T13:26:55.462Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-26T13:26:55.462Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Datos.cs",
               "DocumentMoniker": "C:\\repositorio\\TFG\\Agente\\Agente\\Agente\\Datos.cs",
               "RelativeDocumentMoniker": "Agente\\Datos.cs",

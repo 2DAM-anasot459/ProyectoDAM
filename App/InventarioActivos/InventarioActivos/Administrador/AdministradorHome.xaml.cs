@@ -1,10 +1,14 @@
+
+using InventarioActivos.ViewModels.Administrador;
+
 namespace InventarioActivos.Administrador;
 
 public partial class AdministradorHome : ContentPage
 {
-	public AdministradorHome()
+	
+	public AdministradorHome(AdministradorHomeViewModel  viewModel)
 	{
-		InitializeComponent();
-		BindingContext = new ViewModels.AdministradorHomeViewModel();
+        InitializeComponent();
+		BindingContext = viewModel;
     }
 }

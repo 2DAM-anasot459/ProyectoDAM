@@ -32,7 +32,7 @@
                     WidthRequest="70"
                     HorizontalOptions="Center" />
                 <!--Titulo-->
-                <Label Text="Cambio Contraseña"
+                <Label Text="{Binding Title}"
                     FontSize="28"
                     FontAttributes="Bold"
                     HorizontalOptions="Center"
@@ -45,8 +45,21 @@
                         <RoundRectangle CornerRadius="15" />
                     </Border.StrokeShape>
                     <Entry Placeholder="Usuario"
-                        TextColor="#1F2933"
-                        PlaceholderColor="#9CA3AF"/>
+                           Text="{Binding Usuario}"
+                           TextColor="#1F2933"
+                           PlaceholderColor="#9CA3AF"/>
+                </Border>
+                <Border BackgroundColor="White"                      
+                    Padding="10"
+                    Stroke="#E5E7EB">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="15" />
+                    </Border.StrokeShape>
+                    <Entry Placeholder="Contraseña Actual"
+                           Text="{Binding ContrasenaActual}"
+                           IsPassword="True"
+                           TextColor="#1F2933"
+                           PlaceholderColor="#9CA3AF"/>
                 </Border>
                 <Border BackgroundColor="White"                      
                     Padding="10"
@@ -55,9 +68,10 @@
                         <RoundRectangle CornerRadius="15" />
                     </Border.StrokeShape>
                     <Entry Placeholder="Nueva Contraseña"
-                        IsPassword="True"
-                        TextColor="#1F2933"
-                        PlaceholderColor="#9CA3AF"/>
+                           Text="{Binding NuevaContrasena}"
+                           IsPassword="True"
+                           TextColor="#1F2933"
+                           PlaceholderColor="#9CA3AF"/>
                 </Border>
                 <Border BackgroundColor="White"                      
                     Padding="10"
@@ -66,6 +80,7 @@
                         <RoundRectangle CornerRadius="15" />
                     </Border.StrokeShape>
                     <Entry Placeholder="Confirmar Contraseña"
+                           Text="{Binding ConfirmarContrasena}"
                         IsPassword="True"
                         TextColor="#1F2933"
                         PlaceholderColor="#9CA3AF"/>
@@ -73,12 +88,21 @@
 
                 <!--Botón cambiar contraseña-->
                 <Button Text="Cambiar Contraseña"
-                     CornerRadius="20"
-                     HeightRequest="48"
-                     FontAttributes="Bold"
-                     BackgroundColor="#1D4ED8"
-                     TextColor="White"
-                     HorizontalOptions="Center"/>
+                        Command="{Binding CambiarCommand}"
+                        CornerRadius="20"
+                        HeightRequest="48"
+                        FontAttributes="Bold"
+                        BackgroundColor="#1D4ED8"
+                        TextColor="White"
+                        HorizontalOptions="Center"/>
+                <Button Text="Volver"
+                        Command="{Binding VolverCommand}"
+                        CornerRadius="20"
+                        HeightRequest="48"
+                        FontAttributes="Bold"
+                        BackgroundColor="#1D4ED8"
+                        TextColor="White"
+                        HorizontalOptions="Center"/>
             </VerticalStackLayout>
         </Border>
     </Grid>

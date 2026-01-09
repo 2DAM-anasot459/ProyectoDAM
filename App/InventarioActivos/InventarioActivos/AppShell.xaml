@@ -14,30 +14,50 @@
             ContentTemplate="{DataTemplate auth:Login}"/>
 
     <!--Rutas Administrador-->
+    <TabBar Route="admin" FlyoutItemIsVisible="False">
         <ShellContent                         
-                Route="admin/home"
+                Route="home"
+                Title="Inicio"
+                Icon="home.png"
                 ContentTemplate="{DataTemplate admin:AdministradorHome}"/>
         <ShellContent
-                Route="admin/incidencias"
+                Route="incidencias"
+                Title="Incidencias"
+                Icon="incidencias.png"
                 ContentTemplate="{DataTemplate admin:GestionIncidencias}"/>
         <ShellContent
-                Route="admin/localizaciones"
+                Route="localizaciones"
+                Title="Localizaciones"
+                Icon="localizacion.png"
                 ContentTemplate="{DataTemplate admin:GestionLocalizacion}"/>
         <ShellContent
-                Route="admin/usuarios"
+                Route="usuarios"
+                Title="Usuarios"
+                Icon="usuario.png"
                 ContentTemplate="{DataTemplate admin:GestionUsuarios}"/>
+    </TabBar>
 
     <!--Rutas Técnico-->
+    <TabBar Route="tec" FlyoutItemIsVisible="False">
         <ShellContent
-                Route="tec/homeTec"
+                Route="home"
+                Title="Inicio"
+                Icon="home.png"
                 ContentTemplate="{DataTemplate tec:PanelPrincipal}"/>
         <ShellContent
-                Route="tec/activos"
+                Route="activos"
+                Title="Activos"
+                Icon="incidencias.png"
                 ContentTemplate="{DataTemplate tec:BusquedaActivos}"/>
         <ShellContent
-                Route="tec/mapa"
+                Route="mapa"
+                Title="Mapa"
+                Icon="localizacion.png"
                 ContentTemplate="{DataTemplate tec:Mapa}"/>
         <ShellContent
-                Route="tec/incidenciasTec"
+                Route="incidencias"
+                Title="Incidencias"
+                Icon="hoja.png"
                 ContentTemplate="{DataTemplate tec:PanelIncidencias}"/>
+    </TabBar>
 </Shell>

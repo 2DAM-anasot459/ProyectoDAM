@@ -23,8 +23,6 @@
             Routing.RegisterRoute("tec/editarIncidencia", typeof(Usuario.EditarIncidencia));
             Routing.RegisterRoute("tec/fichaActivo", typeof(Usuario.FichaActivo));
 
-            //Inicio de la aplicación con login
-            GoToAsync("//login");
         }
     }
 }

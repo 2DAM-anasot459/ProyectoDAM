@@ -9,8 +9,9 @@
     ".NETCoreApp,Version=v9.0/win10-x64": {
       "InventarioActivos/1.0": {
         "dependencies": {
-          "Microsoft.Extensions.Logging.Debug": "9.0.8",
+          "CommunityToolkit.Mvvm": "8.4.0",
           "Microsoft.Maui.Controls": "9.0.111",
+          "MySqlConnector": "2.5.0",
           "Microsoft.Maui.Controls.HotReload.Forms": "17.0.0.0",
           "Microsoft.VisualStudio.DesignTools.MobileTapContracts": "17.0.0.0",
           "Microsoft.VisualStudio.DesignTools.TapContract": "17.0.0.0",
@@ -31,6 +32,14 @@
           "WinRT.Runtime.dll": {
             "assemblyVersion": "2.2.0.0",
             "fileVersion": "2.2.0.48161"
+          }
+        }
+      },
+      "CommunityToolkit.Mvvm/8.4.0": {
+        "runtime": {
+          "lib/net8.0-windows10.0.17763/CommunityToolkit.Mvvm.dll": {
+            "assemblyVersion": "8.4.0.0",
+            "fileVersion": "8.4.0.1"
           }
         }
       },
@@ -95,19 +104,6 @@
         },
         "runtime": {
           "lib/net9.0/Microsoft.Extensions.Logging.Abstractions.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.0.825.36511"
-          }
-        }
-      },
-      "Microsoft.Extensions.Logging.Debug/9.0.8": {
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.8",
-          "Microsoft.Extensions.Logging": "9.0.8",
-          "Microsoft.Extensions.Logging.Abstractions": "9.0.8"
-        },
-        "runtime": {
-          "lib/net9.0/Microsoft.Extensions.Logging.Debug.dll": {
             "assemblyVersion": "9.0.0.0",
             "fileVersion": "9.0.825.36511"
           }
@@ -473,6 +469,18 @@
           }
         }
       },
+      "MySqlConnector/2.5.0": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.8",
+          "Microsoft.Extensions.Logging.Abstractions": "9.0.8"
+        },
+        "runtime": {
+          "lib/net9.0/MySqlConnector.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.5.0.0"
+          }
+        }
+      },
       "Microsoft.Maui.Controls.HotReload.Forms/17.0.0.0": {
         "runtime": {
           "Microsoft.Maui.Controls.HotReload.Forms.dll": {
@@ -526,6 +534,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "CommunityToolkit.Mvvm/8.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tqVU8yc/ADO9oiTRyTnwhFN68hCwvkliMierptWOudIAvWY1mWCh5VFh+guwHJmpMwfg0J0rY+yyd5Oy7ty9Uw==",
+      "path": "communitytoolkit.mvvm/8.4.0",
+      "hashPath": "communitytoolkit.mvvm.8.4.0.nupkg.sha512"
+    },
     "Microsoft.Extensions.Configuration/9.0.8": {
       "type": "package",
       "serviceable": true,
@@ -567,13 +582,6 @@
       "sha512": "sha512-pYnAffJL7ARD/HCnnPvnFKSIHnTSmWz84WIlT9tPeQ4lHNiu0Az7N/8itihWvcF8sT+VVD5lq8V+ckMzu4SbOw==",
       "path": "microsoft.extensions.logging.abstractions/9.0.8",
       "hashPath": "microsoft.extensions.logging.abstractions.9.0.8.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Logging.Debug/9.0.8": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-OwHQFVITsONEoizShc1yNYTUvMq0kT9j/LhwAKMsA7OZqtrBXuqjosbSvzkJZ9o+KWAozDh5Y1Vtpe5p/8/1qA==",
-      "path": "microsoft.extensions.logging.debug/9.0.8",
-      "hashPath": "microsoft.extensions.logging.debug.9.0.8.nupkg.sha512"
     },
     "Microsoft.Extensions.Options/9.0.8": {
       "type": "package",
@@ -665,6 +673,13 @@
       "sha512": "sha512-LdMRw0HqGu/w0DQKDRaABdIuSL8GiRitHSMiHH3SAR715/mEiWtVWPRJKp0aMcQ6JiBBqkQVZgu71MeXmQipkw==",
       "path": "microsoft.windowsappsdk/1.7.250606001",
       "hashPath": "microsoft.windowsappsdk.1.7.250606001.nupkg.sha512"
+    },
+    "MySqlConnector/2.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hoAwfHHF8DlRRqwHOhN3u1KLi+XbX/4LPS7Anfa+SYC97vRyIfdEOEEfj1L50q01Ik8aDNvmDrNmu/VPFiAiaQ==",
+      "path": "mysqlconnector/2.5.0",
+      "hashPath": "mysqlconnector.2.5.0.nupkg.sha512"
     },
     "Microsoft.Maui.Controls.HotReload.Forms/17.0.0.0": {
       "type": "reference",

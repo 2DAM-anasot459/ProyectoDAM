@@ -3,9 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="InventarioActivos.Views.BarraInferiorAdmin">
     <!--Barra de navegación-->
-    <Grid BackgroundColor="#E53935"                  
-           Padding="0,6"
-           ColumnDefinitions="*,*,*,*">
+    <Grid BackgroundColor="#E53935" 
+          HeightRequest="90"
+          VerticalOptions="End"
+          Padding="0,6"
+          ColumnDefinitions="*,*,*,*">
         <!--Inicio-->
         <VerticalStackLayout Grid.Column="0"
                              Spacing="2"

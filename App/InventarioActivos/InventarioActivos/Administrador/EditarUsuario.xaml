@@ -2,7 +2,9 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="InventarioActivos.Administrador.EditarUsuario"
-             Shell.NavBarIsVisible="False">
+             xmlns:controls="clr-namespace:InventarioActivos.Views"
+             Shell.NavBarIsVisible="False"
+             Shell.TabBarIsVisible="False">
     <Grid RowDefinitions="Auto,*,Auto"
       BackgroundColor="White">
         <!--Cabecera-->
@@ -10,7 +12,7 @@
           BackgroundColor="#E53935"
           HeightRequest="60"
           Padding="16,10,16,10">
-            <Label Text="Gestión de Usuarios"
+            <Label Text="{Binding Title}"
                VerticalOptions="Center"
                HorizontalOptions="Start"
                FontSize="20"
@@ -48,9 +50,10 @@
                                 <RoundRectangle CornerRadius="10"/>
                             </Border.StrokeShape>
                             <Entry Placeholder="Nombre Usuario"
-                           Margin="10,0"
-                           TextColor="Black"
-                           PlaceholderColor="#A0A0A0"/>
+                                   Text="{Binding Nombre}"
+                                   Margin="10,0"
+                                   TextColor="Black"
+                                   PlaceholderColor="#A0A0A0"/>
                         </Border>
                         <!--Apellidos Usuario-->
                         <Label Text="Apellidos"
@@ -64,6 +67,7 @@
                                 <RoundRectangle CornerRadius="10"/>
                             </Border.StrokeShape>
                             <Entry Placeholder="Apellidos Usuario"
+                                   Text="{Binding Apellidos}"
                                    Margin="10,0"
                                    TextColor="Black"
                                    PlaceholderColor="#A0A0A0"/>
@@ -81,163 +85,90 @@
                                 <RoundRectangle CornerRadius="10"/>
                             </Border.StrokeShape>
                             <Entry Placeholder="Nombre de Usuario"
-                           Margin="10,0"
-                           TextColor="Black"
-                           PlaceholderColor="#A0A0A0"/>
+                                   Text="{Binding NombreUsuario}"
+                                   Margin="10,0"
+                                   TextColor="Black"
+                                   PlaceholderColor="#A0A0A0"/>
                         </Border>
-                        <!--Fecha-->
-                        <Label Text="Fecha"
-                       FontSize="13"
-                       TextColor="#555555"
-                        Margin="0,8,0,0"/>
+                        <!--Contraseña-->
+                        <Label Text="Contraseña"
+                              FontSize="13"
+                              TextColor="#555555"
+                               Margin="0,8,0,0"/>
                         <Border BackgroundColor="White"
-                        Stroke="#DDDDDD"
-                        StrokeThickness="1"
-                        HeightRequest="44">
+                               Stroke="#DDDDDD"
+                               StrokeThickness="1"
+                               HeightRequest="44">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="10"/>
                             </Border.StrokeShape>
-                            <Grid ColumnDefinitions="*,Auto">
-                                <DatePicker Margin="8,0"
-                                    VerticalOptions="Center"
-                                    TextColor="Black"
-                                    Format="dd/MM/yyyy"/>
-                                <Image Grid.Column="1"
-                               Source="calendario.png"
-                               HeightRequest="16"
-                               WidthRequest="16"
-                               Margin="0,0,10,0"
-                               VerticalOptions="Center"
-                               HorizontalOptions="End"/>
-                            </Grid>
+                            <Entry Placeholder="Contraseña"
+                                  Text="{Binding Contrasena}"
+                                  Margin="10,0"
+                                  IsPassword="True"
+                                  TextColor="Black"
+                                  PlaceholderColor="#A0A0A0"/>
                         </Border>
                         <!--Tipo de Usuario (Combo)-->
                         <Label Text="Tipo"
-                       FontSize="13"
-                       TextColor="#555555"
-                        Margin="0,8,0,0"/>
+                               FontSize="13"
+                               TextColor="#555555"
+                               Margin="0,8,0,0"/>
                         <Border BackgroundColor="White"
-                        Stroke="#DDDDDD"
-                        StrokeThickness="1"
-                        HeightRequest="44">
+                                Stroke="#DDDDDD"
+                                StrokeThickness="1"
+                                HeightRequest="44">
                             <Border.StrokeShape>
                                 <RoundRectangle CornerRadius="10"/>
                             </Border.StrokeShape>
                             <Grid ColumnDefinitions="*,Auto">
-                                <Label Text="Tipo de Usuario"
-                               Margin="10,0"
-                               VerticalOptions="Center"
-                               TextColor="#A0A0A0"/>
+                                <Picker x:Name="PickerRoles"
+                                    Title="Tipo de Usuario"
+                                    ItemsSource="{Binding RolItems}"
+                                    SelectedItem="{Binding RolSeleccionado}"
+                                    ItemDisplayBinding="{Binding NombreRol}"
+                                    Margin="10,0"
+                                    VerticalOptions="Center"
+                                    TextColor="#A0A0A0"/>
                                 <Image Grid.Column="1"
-                               Source="flechanavegar.png"
-                               HeightRequest="16"
-                               WidthRequest="16"
-                               Margin="0,0,10,0"
-                               VerticalOptions="Center"
-                               HorizontalOptions="End"/>
+                                   Source="flechanavegar.png"
+                                   HeightRequest="16"
+                                   WidthRequest="16"
+                                   Margin="0,0,10,0"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="End">
+                                    <Image.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="AbrirRolTapped"/>
+                                    </Image.GestureRecognizers>
+                                </Image>
                             </Grid>
                         </Border>
                         <!--Botón Editar-->
                         <Button Text="Editar Usuario"
-                        Margin="0,16,0,0"
-                        HeightRequest="50"
-                        CornerRadius="25"
-                        BackgroundColor="#1565C0"
-                        TextColor="White"
-                        FontAttributes="Bold"
-                        FontSize="16"/>
+                                Command="{Binding GuardarCommand}"
+                                Margin="0,16,0,0"
+                                HeightRequest="50"
+                                CornerRadius="25"
+                                BackgroundColor="#1565C0"
+                                TextColor="White"
+                                FontAttributes="Bold"
+                                FontSize="16"/>
+                        <Button Text="Volver"
+                                Command="{Binding VolverCommand}"
+                                Margin="0,16,0,0"
+                                HeightRequest="50"
+                                CornerRadius="25"
+                                BackgroundColor="#1565C0"
+                                TextColor="White"
+                                FontAttributes="Bold"
+                                FontSize="16"/>
                     </VerticalStackLayout>
                 </Border>
             </Grid>
         </ScrollView>
 
-        <!--Barra de navegación inferior-->
-        <Grid Grid.Row="2"
-          BackgroundColor="#E53935"                  
-          Padding="0,6"
-          ColumnDefinitions="*,*,*,*">
-            <!--Inicio-->
-            <VerticalStackLayout Grid.Column="0"
-                         Spacing="2"
-                         HorizontalOptions="Center">
-                <Border BackgroundColor="White"
-                HeightRequest="40"
-                WidthRequest="40">
-                    <Border.StrokeShape>
-                        <RoundRectangle CornerRadius="20"/>
-                    </Border.StrokeShape>
-                    <Image Source="home.png"
-                   HeightRequest="24"
-                   WidthRequest="24"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center"/>
-                </Border>
-                <Label Text="Inicio"
-               FontSize="12"
-               TextColor="White"
-               HorizontalOptions="Center"
-               VerticalOptions="Center"/>
-            </VerticalStackLayout>
-            <!--Incidencias-->
-            <VerticalStackLayout Grid.Column="1"
-                         Spacing="2"
-                         HorizontalOptions="Center">
-                <Border BackgroundColor="White"
-                HeightRequest="40"
-                WidthRequest="40">
-                    <Border.StrokeShape>
-                        <RoundRectangle CornerRadius="20"/>
-                    </Border.StrokeShape>
-                    <Image Source="incidencias.png"
-                   HeightRequest="24"
-                   WidthRequest="24"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center"/>
-                </Border>
-                <Label Text="Incidencias"
-               FontSize="12"
-               TextColor="White"/>
-            </VerticalStackLayout>
-            <!--Localización-->
-            <VerticalStackLayout Grid.Column="2"
-                         Spacing="2"
-                         HorizontalOptions="Center">
-                <Border BackgroundColor="White"
-                HeightRequest="40"
-                WidthRequest="40">
-                    <Border.StrokeShape>
-                        <RoundRectangle CornerRadius="20"/>
-                    </Border.StrokeShape>
-                    <Image Source="localizacion.png"
-                   HeightRequest="24"
-                   WidthRequest="24"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center"/>
-                </Border>
-                <Label Text="Localización"
-               FontSize="12"
-               TextColor="White"/>
-            </VerticalStackLayout>
-            <!--Usuarios-->
-            <VerticalStackLayout Grid.Column="3"
-                         Spacing="2"
-                         HorizontalOptions="Center">
-                <Border BackgroundColor="White"
-                HeightRequest="40"
-                WidthRequest="40">
-                    <Border.StrokeShape>
-                        <RoundRectangle CornerRadius="20"/>
-                    </Border.StrokeShape>
-                    <Image Source="usuario.png"
-                   HeightRequest="24"
-                   WidthRequest="24"
-                   HorizontalOptions="Center"
-                   VerticalOptions="Center"/>
-                </Border>
-                <Label Text="Incidencias"
-               FontSize="12"
-               TextColor="White"/>
-            </VerticalStackLayout>
-        </Grid>
+        <controls:BarraInferiorAdmin Grid.Row="2"
+                             HeightRequest="90"
+                             VerticalOptions="End"/>
     </Grid>
 </ContentPage>

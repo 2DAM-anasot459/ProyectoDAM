@@ -174,3 +174,9 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = InventarioActivos.Views.BarraInferiorAdmin.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\BarraInferiorAdmin.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\BarraInferiorAdmin.xaml
+
+[C:/repositorio/TFG/App/InventarioActivos/InventarioActivos/Views/BarraInferiorTec.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = InventarioActivos.Views.BarraInferiorTec.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\BarraInferiorTec.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\BarraInferiorTec.xaml

@@ -71,10 +71,6 @@
               "target": "Package",
               "version": "[8.4.0, )"
             },
-            "Microsoft.Extensions.Logging.Debug": {
-              "target": "Package",
-              "version": "[9.0.8, )"
-            },
             "Microsoft.Maui.Controls": {
               "target": "Package",
               "version": "[9.0.111, )"
@@ -84,6 +80,10 @@
               "target": "Package",
               "version": "[9.0.11, )",
               "autoReferenced": true
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.5.0, )"
             }
           },
           "imports": [
@@ -412,10 +412,6 @@
               "target": "Package",
               "version": "[8.4.0, )"
             },
-            "Microsoft.Extensions.Logging.Debug": {
-              "target": "Package",
-              "version": "[9.0.8, )"
-            },
             "Microsoft.Maui.Controls": {
               "target": "Package",
               "version": "[9.0.111, )"
@@ -425,6 +421,10 @@
               "target": "Package",
               "version": "[9.0.11, )",
               "autoReferenced": true
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.5.0, )"
             }
           },
           "imports": [
@@ -444,7 +444,7 @@
               "version": "[26.0.9766, 26.0.9766]"
             },
             {
-              "name": "Microsoft.iOS.Runtime.iossimulator-x64.net9.0_26.0",
+              "name": "Microsoft.iOS.Runtime.ios-arm64.net9.0_26.0",
               "version": "[26.0.9766, 26.0.9766]"
             }
           ],
@@ -749,10 +749,6 @@
               "target": "Package",
               "version": "[8.4.0, )"
             },
-            "Microsoft.Extensions.Logging.Debug": {
-              "target": "Package",
-              "version": "[9.0.8, )"
-            },
             "Microsoft.Maui.Controls": {
               "target": "Package",
               "version": "[9.0.111, )"
@@ -762,6 +758,10 @@
               "target": "Package",
               "version": "[9.0.11, )",
               "autoReferenced": true
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.5.0, )"
             }
           },
           "imports": [
@@ -1087,13 +1087,13 @@
               "target": "Package",
               "version": "[8.4.0, )"
             },
-            "Microsoft.Extensions.Logging.Debug": {
-              "target": "Package",
-              "version": "[9.0.8, )"
-            },
             "Microsoft.Maui.Controls": {
               "target": "Package",
               "version": "[9.0.111, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.5.0, )"
             }
           },
           "imports": [
@@ -1415,7 +1415,7 @@
         "android-x64": {
           "#import": []
         },
-        "iossimulator-x64": {
+        "ios-arm64": {
           "#import": []
         },
         "maccatalyst-x64": {

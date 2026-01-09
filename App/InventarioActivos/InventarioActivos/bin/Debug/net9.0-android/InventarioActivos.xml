@@ -4,9 +4,45 @@
         <name>InventarioActivos</name>
     </assembly>
     <members>
+        <member name="T:InventarioActivos.ViewModels.CambioContrasenaViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:InventarioActivos.ViewModels.CambioContrasenaViewModel.Usuario">
+            <inheritdoc cref="F:InventarioActivos.ViewModels.CambioContrasenaViewModel.usuario"/>
+        </member>
+        <member name="P:InventarioActivos.ViewModels.CambioContrasenaViewModel.ContrasenaActual">
+            <inheritdoc cref="F:InventarioActivos.ViewModels.CambioContrasenaViewModel.contrasenaActual"/>
+        </member>
+        <member name="P:InventarioActivos.ViewModels.CambioContrasenaViewModel.NuevaContrasena">
+            <inheritdoc cref="F:InventarioActivos.ViewModels.CambioContrasenaViewModel.nuevaContrasena"/>
+        </member>
+        <member name="P:InventarioActivos.ViewModels.CambioContrasenaViewModel.ConfirmarContrasena">
+            <inheritdoc cref="F:InventarioActivos.ViewModels.CambioContrasenaViewModel.confirmarContrasena"/>
+        </member>
+        <member name="F:InventarioActivos.ViewModels.CambioContrasenaViewModel.cambiarCommand">
+            <summary>The backing field for <see cref="P:InventarioActivos.ViewModels.CambioContrasenaViewModel.CambiarCommand"/>.</summary>
+        </member>
+        <member name="P:InventarioActivos.ViewModels.CambioContrasenaViewModel.CambiarCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:InventarioActivos.ViewModels.CambioContrasenaViewModel.CambiarAsync"/>.</summary>
+        </member>
+        <member name="F:InventarioActivos.ViewModels.CambioContrasenaViewModel.volverCommand">
+            <summary>The backing field for <see cref="P:InventarioActivos.ViewModels.CambioContrasenaViewModel.VolverCommand"/>.</summary>
+        </member>
+        <member name="P:InventarioActivos.ViewModels.CambioContrasenaViewModel.VolverCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:InventarioActivos.ViewModels.CambioContrasenaViewModel.VolverAsync"/>.</summary>
+        </member>
         <member name="T:InventarioActivos.ViewModels.LoginViewModel">
             <inheritdoc/>
             <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:InventarioActivos.ViewModels.LoginViewModel.Usuario">
+            <inheritdoc cref="F:InventarioActivos.ViewModels.LoginViewModel.usuario"/>
+        </member>
+        <member name="P:InventarioActivos.ViewModels.LoginViewModel.Contrasena">
+            <inheritdoc cref="F:InventarioActivos.ViewModels.LoginViewModel.contrasena"/>
         </member>
         <member name="F:InventarioActivos.ViewModels.LoginViewModel.iniciarSesionCommand">
             <summary>The backing field for <see cref="P:InventarioActivos.ViewModels.LoginViewModel.IniciarSesionCommand"/>.</summary>
@@ -25,6 +61,48 @@
             Android Resource Designer class.
             Exposes the Android Resource designer assembly into the project Namespace.
             </summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Usuario">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Usuario" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ContrasenaActual">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ContrasenaActual" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.NuevaContrasena">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "NuevaContrasena" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ConfirmarContrasena">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ConfirmarContrasena" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Contrasena">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Contrasena" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Usuario">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Usuario" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ContrasenaActual">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ContrasenaActual" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.NuevaContrasena">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "NuevaContrasena" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ConfirmarContrasena">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ConfirmarContrasena" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Contrasena">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Contrasena" generated properties.</summary>
         </member>
     </members>
 </doc>
